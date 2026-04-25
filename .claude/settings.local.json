@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(curl -s -L \"https://api.anthropic.com/v1/design/h/Rfy4pj92n4UzVVJ5Lo_IsQ?open_file=studio.html\" -H \"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\")",
+      "Bash(curl -s -L \"https://api.anthropic.com/v1/design/h/Rfy4pj92n4UzVVJ5Lo_IsQ\")",
+      "Bash(mkdir -p /tmp/design)",
+      "Read(//tmp/**)",
+      "Bash(tar -xzf /Users/heidiwang/.claude/projects/-Users-heidiwang-Desktop-YELI/b22c1677-f501-4d0b-adfc-de083ee9c919/tool-results/webfetch-1777115148139-kbshx2.bin)",
+      "Read(//private/tmp/design/yeli2/**)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:5173/)",
+      "Bash(curl -s http://localhost:5173/src/main.tsx -o /dev/null -w \"main.tsx HTTP %{http_code}\\\\n\")"
+    ]
+  }
+}

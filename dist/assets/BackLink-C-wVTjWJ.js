@@ -1,0 +1,1 @@
+import{j as n,L as s}from"./index-BGRdAvDk.js";function a({to:t,children:e}){return n.jsx(s,{to:t,className:"mb-[30px] inline-flex items-center gap-[10px] font-sans text-[11px] uppercase tracking-meta text-ink-soft transition-colors hover:text-ink",children:e})}export{a as B};

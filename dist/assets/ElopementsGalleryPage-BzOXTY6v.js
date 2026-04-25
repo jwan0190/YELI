@@ -1,0 +1,1 @@
+import{j as r}from"./index-BGRdAvDk.js";import{G as t,a}from"./galleries.data-BVeGhLe3.js";import"./PageBanner-MrnJYRoZ.js";import"./Reveal-CuRK5dsO.js";import"./BackLink-C-wVTjWJ.js";import"./Frame-DticObyS.js";function l(){return r.jsx(t,{data:a})}export{l as default};
