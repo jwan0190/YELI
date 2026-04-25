@@ -1,1 +1,0 @@
-import{j as a}from"./index-BGRdAvDk.js";function i(...e){return e.filter(Boolean).join(" ")}const c={up:"",left:"slide-l",right:"slide-r"},u={0:"",1:"delay-1",2:"delay-2",3:"delay-3"};function p({as:e,variant:t="up",delay:n=0,className:o,children:s,...l}){const r=e??"div";return a.jsx(r,{className:i("reveal",c[t],u[n],o),...l,children:s})}export{p as R,i as c};

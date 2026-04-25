@@ -1,1 +1,0 @@
-import{j as a}from"./index-BGRdAvDk.js";import{c as i}from"./Reveal-CuRK5dsO.js";function o({src:r,alt:l="",caption:s,ratio:m="tall",className:e}){return a.jsxs("div",{className:i("frame",m,e),children:[a.jsx("img",{src:r,alt:l||s||"",loading:"lazy"}),s&&a.jsx("span",{className:"caption",children:s})]})}export{o as F};
