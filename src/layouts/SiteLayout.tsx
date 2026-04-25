@@ -6,7 +6,7 @@ import { useReveal } from "../hooks/useReveal";
 
 export function SiteLayout() {
   const { pathname, key } = useLocation();
-  useReveal(pathname);
+  useReveal(key);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });

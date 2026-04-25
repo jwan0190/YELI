@@ -14,8 +14,11 @@ const FIELD_IDS = {
   message: "inquiry-message",
 } as const;
 
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
+
 export function InquiryForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const {
     register,
     handleSubmit,
@@ -25,9 +28,51 @@ export function InquiryForm() {
     defaultValues: { type: "Wedding" },
   });
 
-  const onSubmit = async (_values: InquiryFormValues) => {
-    await new Promise((r) => setTimeout(r, 400));
-    setSubmitted(true);
+  const onSubmit = async (values: InquiryFormValues) => {
+    setSubmitError(null);
+
+    const accessKey = import.meta.env.VITE_WEB3FORMS_KEY;
+    if (!accessKey) {
+      setSubmitError("Email service is not configured. Please try again later.");
+      return;
+    }
+
+    const subject = `New ${values.type} inquiry from ${values.yourName}`;
+    const payload = {
+      access_key: accessKey,
+      subject,
+      from_name: values.yourName,
+      replyto: values.email,
+      "Your name": values.yourName,
+      "Partner's name": values.partnerName ?? "",
+      "Email": values.email,
+      "Date": values.date ?? "",
+      "Type": values.type,
+      "Where": values.location ?? "",
+      "Message": values.message ?? "",
+    };
+
+    try {
+      const response = await fetch(WEB3FORMS_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+      const result = (await response.json()) as { success?: boolean; message?: string };
+      if (!response.ok || !result.success) {
+        throw new Error(result.message ?? "Request failed");
+      }
+      setSubmitted(true);
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error
+          ? `We couldn't send your message: ${error.message}`
+          : "We couldn't send your message. Please try again or email hello@yeli.studio.",
+      );
+    }
   };
 
   if (submitted) {
@@ -96,6 +141,15 @@ export function InquiryForm() {
         placeholder="Anything you'd like us to know."
         {...register("message")}
       />
+
+      {submitError ? (
+        <p
+          role="alert"
+          className="mt-[20px] font-sans text-[12px] uppercase tracking-meta text-accent"
+        >
+          {submitError}
+        </p>
+      ) : null}
 
       <button
         type="submit"
