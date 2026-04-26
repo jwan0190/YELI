@@ -1,0 +1,38 @@
+{
+  "pageTitle": "YELI — Wedding & Event Photography",
+  "hero": {
+    "tagline": "Event Photography",
+    "headline": "Light, held<br/><em>still.</em>",
+    "meta": "EST. 2014 — NEW YORK · PARIS · KYOTO",
+    "scroll": "SCROLL"
+  },
+  "manifesto": {
+    "eyebrow": "001 — The Studio",
+    "title": "We photograph<br/>the <em>quiet hours</em><br/>between the vows.",
+    "paragraphs": [
+      "YELI is a small studio of four photographers documenting weddings, private celebrations, and editorial events across three continents.",
+      "Our work is unhurried — closer to a film still than a snapshot. We arrive early, stay late, and trust the day to give us its best moments."
+    ]
+  },
+  "gallery": {
+    "chapterOne": {
+      "chapter": "Chapter I",
+      "title": "Light, <em>held</em>.",
+      "copy": "The hour before the door opens. The breath that no one else sees. We photograph the quiet, and let the noise pass through.",
+      "caption": "Lawn ceremony — Hudson Valley"
+    },
+    "chapterTwo": {
+      "chapter": "Chapter II",
+      "title": "Two, <em>and a vow</em>.",
+      "copy": "Five weddings a season. We arrive a day early, and we never miss the quiet hours.",
+      "caption": "Petals — Florence"
+    },
+    "longTableCaption": "Long table — Tuscany",
+    "comoCaption": "The Aurelio Wedding — Como",
+    "danceCaption": "The dance — Mallorca"
+  },
+  "pullQuote": {
+    "quote": "Photographs are how we stay in the rooms we leave.",
+    "signature": "— The Studio"
+  }
+}

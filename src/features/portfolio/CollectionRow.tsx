@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/Button";
 import { Reveal } from "../../components/ui/Reveal";
+import { RichText } from "../../components/ui/RichText";
 import { clsx } from "../../utils/clsx";
 
 export type CollectionRowProps = {
@@ -9,7 +10,7 @@ export type CollectionRowProps = {
   cover: string;
   alt: string;
   eyebrow: string;
-  title: React.ReactNode;
+  title: string;
   description: string;
   ctaLabel: string;
   href: string;
@@ -66,7 +67,7 @@ export function CollectionRow({
           className="mb-[24px] mt-[24px] font-display font-light leading-none [letter-spacing:-0.01em] [&_em]:italic [&_em]:text-accent"
           style={{ fontSize: "clamp(40px, 5.4vw, 80px)" }}
         >
-          {title}
+          <RichText text={title} />
         </h2>
         <p className="mb-[36px] max-w-[42ch] text-[18px] font-light leading-[1.6] text-ink-soft">
           {description}

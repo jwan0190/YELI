@@ -1,9 +1,10 @@
 import { Reveal } from "../../components/ui/Reveal";
+import { RichText } from "../../components/ui/RichText";
 import { clsx } from "../../utils/clsx";
 
 export type FilmReelData = {
   meta: string;
-  title: React.ReactNode;
+  title: string;
   description: string;
   duration: string;
   poster: string;
@@ -12,9 +13,10 @@ export type FilmReelData = {
 type FilmReelProps = {
   reel: FilmReelData;
   reverse?: boolean;
+  playLabel: string;
 };
 
-export function FilmReel({ reel, reverse }: FilmReelProps) {
+export function FilmReel({ reel, reverse, playLabel }: FilmReelProps) {
   return (
     <Reveal
       as="article"
@@ -31,7 +33,7 @@ export function FilmReel({ reel, reverse }: FilmReelProps) {
         />
         <div className="absolute inset-0 grid place-items-center text-white">
           <div className="grid h-[92px] w-[92px] place-items-center rounded-full border border-white/70 font-sans text-[10px] uppercase tracking-meta backdrop-blur-md transition-colors duration-300 hover:bg-white/15">
-            Play · {reel.duration}
+            {playLabel} · {reel.duration}
           </div>
         </div>
       </div>
@@ -44,7 +46,7 @@ export function FilmReel({ reel, reverse }: FilmReelProps) {
           className="mb-[18px] font-display font-light leading-[1.05] [&_em]:italic [&_em]:text-accent"
           style={{ fontSize: "clamp(32px, 4vw, 56px)" }}
         >
-          {reel.title}
+          <RichText text={reel.title} />
         </h3>
         <p className="max-w-[42ch] text-[17px] font-light leading-[1.55] text-ink-soft">
           {reel.description}

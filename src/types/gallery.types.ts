@@ -15,14 +15,14 @@ export type GalleryRow = {
 
 export type GalleryPageData = {
   slug: string;
-  title: React.ReactNode;
+  title: string;
   collectionLabel: string;
   banner: string;
   lede: string;
   rows: GalleryRow[];
   next: {
     label: string;
-    title: React.ReactNode;
+    title: string;
     href: string;
   };
 };

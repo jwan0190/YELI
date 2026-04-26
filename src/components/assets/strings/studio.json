@@ -1,0 +1,42 @@
+{
+  "pageTitle": "Studio — YELI",
+  "banner": {
+    "eyebrow": "Section 03 — Studio",
+    "title": "A small<br/><em>practice</em>, since 2014.",
+    "lede": "Four photographers, one studio in the Marais, three continents a year. We photograph weddings and editorial events with film, light, and a great deal of patience."
+  },
+  "approach": {
+    "eyebrow": "Approach",
+    "title": "We are <em>quiet</em><br/>in the room.",
+    "paragraphs": [
+      "We don't direct, and we rarely interrupt. The work we love best is the kind that happens when the room forgets we're there — the held breath before the door opens, the long look across a table, the late hour when the band has gone home.",
+      "Every wedding is documented on a mix of medium-format film and digital. Every gallery is hand-edited by the lead photographer."
+    ]
+  },
+  "principles": {
+    "eyebrow": "Principles",
+    "title": "How we <em>work</em>.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Slowly",
+        "description": "We arrive a day early and stay until the last guest leaves. We never bring more than two cameras."
+      },
+      {
+        "number": "02",
+        "title": "Honestly",
+        "description": "No staged moments. No tableaux. We document what is, not what looks well."
+      },
+      {
+        "number": "03",
+        "title": "Quietly",
+        "description": "The room is the subject. We are not."
+      },
+      {
+        "number": "04",
+        "title": "Permanently",
+        "description": "Every couple receives an heirloom album, hand-bound in Florence."
+      }
+    ]
+  }
+}

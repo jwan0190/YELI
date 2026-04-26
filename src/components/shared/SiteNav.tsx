@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { BRAND_NAME, PRIMARY_NAV, ROUTES } from "../../constants/navigation";
+import navContent from "../assets/strings/nav.json";
+import { BRAND_NAME, NAV_CTA_LABEL, PRIMARY_NAV, ROUTES } from "../../constants/navigation";
 
 export function SiteNav() {
   const [open, setOpen] = useState(false);
@@ -54,11 +55,11 @@ export function SiteNav() {
           to={ROUTES.contact}
           className="border-b border-current pb-[2px] font-sans text-[13px] font-normal uppercase tracking-eyebrow transition-opacity hover:opacity-70 max-md:hidden"
         >
-          Get in touch
+          {NAV_CTA_LABEL}
         </Link>
         <button
           type="button"
-          aria-label={open ? "Close menu" : "Open menu"}
+          aria-label={open ? navContent.menu.close : navContent.menu.open}
           aria-expanded={open}
           aria-controls="mobile-menu"
           onClick={() => setOpen((value) => !value)}
@@ -107,7 +108,7 @@ export function SiteNav() {
             onClick={() => setOpen(false)}
             className="mt-auto inline-block self-start border-b border-current pb-[2px] font-sans text-[13px] font-normal uppercase tracking-eyebrow transition-opacity hover:opacity-70"
           >
-            Get in touch
+            {NAV_CTA_LABEL}
           </Link>
         </div>
       </div>

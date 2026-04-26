@@ -1,6 +1,7 @@
 import { GalleryPage } from "../../features/galleries/GalleryPage";
-import { PORTRAITS_GALLERY } from "../../features/galleries/galleries.data";
+import { useGallery } from "../../hooks/useGalleries";
 
 export default function PortraitsGalleryPage() {
-  return <GalleryPage data={PORTRAITS_GALLERY} />;
+  const data = useGallery("portraits");
+  return <GalleryPage data={data} />;
 }

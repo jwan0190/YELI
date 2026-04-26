@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom";
+import navContent from "../assets/strings/nav.json";
 import { BRAND_NAME, FOOTER_NAV, ROUTES } from "../../constants/navigation";
 
-const STUDIO_ADDRESS = ["14 rue des Archives", "75004 Paris"];
-const INQUIRY_EMAIL = "hello@yeli.studio";
-const BOOKING_NOTE = "2026 dates open.";
-const COPY_LINE = "© 2026 YELI";
-const CREDIT_LINE = "Photographs by the studio";
+const FOOTER = navContent.footer;
 
 type FooterColumn = {
   heading: string;
@@ -14,24 +11,24 @@ type FooterColumn = {
 
 const COLUMNS: FooterColumn[] = [
   {
-    heading: "Studio",
+    heading: FOOTER.studio.heading,
     body: (
       <p>
-        {STUDIO_ADDRESS.map((line, i) => (
+        {FOOTER.studio.lines.map((line, i) => (
           <span key={line}>
             {line}
-            {i < STUDIO_ADDRESS.length - 1 && <br />}
+            {i < FOOTER.studio.lines.length - 1 && <br />}
           </span>
         ))}
       </p>
     ),
   },
   {
-    heading: "Inquiries",
-    body: <a href={`mailto:${INQUIRY_EMAIL}`}>{INQUIRY_EMAIL}</a>,
+    heading: FOOTER.inquiries.heading,
+    body: <a href={`mailto:${FOOTER.inquiries.email}`}>{FOOTER.inquiries.email}</a>,
   },
   {
-    heading: "Pages",
+    heading: FOOTER.pages.heading,
     body: (
       <>
         {FOOTER_NAV.map((link) => (
@@ -43,8 +40,8 @@ const COLUMNS: FooterColumn[] = [
     ),
   },
   {
-    heading: "Booking",
-    body: <p>{BOOKING_NOTE}</p>,
+    heading: FOOTER.booking.heading,
+    body: <p>{FOOTER.booking.note}</p>,
   },
 ];
 
@@ -78,8 +75,8 @@ export function SiteFooter() {
       </div>
 
       <div className="mt-[80px] flex justify-between border-t border-white/[0.18] pt-[24px] font-sans text-[10px] uppercase tracking-meta opacity-60">
-        <span>{COPY_LINE}</span>
-        <span>{CREDIT_LINE}</span>
+        <span>{FOOTER.copy}</span>
+        <span>{FOOTER.credit}</span>
       </div>
     </footer>
   );

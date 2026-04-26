@@ -1,9 +1,10 @@
 import type { ReactNode } from "react";
 import { Reveal } from "../ui/Reveal";
+import { RichText } from "../ui/RichText";
 
 type PageBannerProps = {
   eyebrow: string;
-  title: ReactNode;
+  title: string;
   lede?: string;
   beforeContent?: ReactNode;
 };
@@ -21,7 +22,7 @@ export function PageBanner({ eyebrow, title, lede, beforeContent }: PageBannerPr
         className="mt-[36px] max-w-[14ch] font-display font-light leading-[0.95] [letter-spacing:-0.01em] [&_em]:italic [&_em]:text-accent"
         style={{ fontSize: "clamp(56px, 9vw, 140px)" }}
       >
-        {title}
+        <RichText text={title} />
       </Reveal>
       {lede && (
         <Reveal

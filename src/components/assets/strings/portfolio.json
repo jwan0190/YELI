@@ -1,0 +1,75 @@
+{
+  "pageTitle": "Portfolio — YELI",
+  "banner": {
+    "eyebrow": "Portfolio — Five Collections",
+    "title": "A year<br/>in <em>frames</em>.",
+    "lede": "Selected weddings, events, and editorial work — each collection opens to its own gallery."
+  },
+  "collections": [
+    {
+      "key": "weddings",
+      "number": "№ 01",
+      "frameCount": "42 frames",
+      "image": "provence",
+      "alt": "Weddings",
+      "eyebrow": "Collection 01",
+      "title": "Wedding <em>days</em>",
+      "description": "Twelve weddings from this season — Provence, Como, Kyoto, Mallorca. Documented slowly, with film and patience.",
+      "ctaLabel": "View weddings",
+      "href": "/portfolio/weddings"
+    },
+    {
+      "key": "events",
+      "number": "№ 02",
+      "frameCount": "28 frames",
+      "image": "longTable",
+      "alt": "Events",
+      "eyebrow": "Collection 02",
+      "title": "Editorial <em>events</em>",
+      "description": "Brand dinners, gallery openings, private salons. Eight stories from rooms briefly occupied.",
+      "ctaLabel": "View events",
+      "href": "/portfolio/events"
+    },
+    {
+      "key": "elopements",
+      "number": "№ 03",
+      "frameCount": "19 frames",
+      "image": "kyoto",
+      "alt": "Elopements",
+      "eyebrow": "Collection 03",
+      "title": "Quiet <em>elopements</em>",
+      "description": "Twelve guests or fewer. Anywhere on the map — the smaller the room, the closer the photograph.",
+      "ctaLabel": "View elopements",
+      "href": "/portfolio/elopements"
+    },
+    {
+      "key": "portraits",
+      "number": "№ 04",
+      "frameCount": "24 frames",
+      "image": "bride",
+      "alt": "Portraits",
+      "eyebrow": "Collection 04",
+      "title": "Bridal <em>portraits</em>",
+      "description": "The hour before the door opens. Studio sittings and on-location portraits before the day begins.",
+      "ctaLabel": "View portraits",
+      "href": "/portfolio/portraits"
+    },
+    {
+      "key": "film",
+      "number": "№ 05",
+      "frameCount": "16mm · 6 reels",
+      "image": "firstLook",
+      "alt": "Film & Cinema",
+      "eyebrow": "Collection 05",
+      "title": "Film <em>& cinema</em>",
+      "description": "Super-8 and 16mm transfers — six-minute story films, scored, hand-edited from a season's footage.",
+      "ctaLabel": "View films",
+      "href": "/portfolio/film"
+    }
+  ],
+  "cta": {
+    "eyebrow": "Commissions open · 2026",
+    "title": "Tell us about <em>the day</em>.",
+    "ctaLabel": "Begin an inquiry"
+  }
+}

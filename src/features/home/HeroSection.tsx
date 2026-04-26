@@ -1,16 +1,16 @@
+import homeContent from "../../components/assets/strings/home.json";
 import { Reveal } from "../../components/ui/Reveal";
-import { IMG } from "../../constants/images";
-
-const HERO_TAGLINE = "Event Photography";
-const HERO_LINE_1 = "Light, held";
-const HERO_LINE_2 = "still.";
-const HERO_META = "EST. 2014 — NEW YORK · PARIS · KYOTO";
+import { RichText } from "../../components/ui/RichText";
+import { useImage } from "../../hooks/useImages";
 
 export function HeroSection() {
+  const heroSrc = useImage("hero");
+  const { hero } = homeContent;
+
   return (
     <header className="relative h-[72vh] min-h-[520px] max-h-[760px] overflow-hidden bg-ink">
       <img
-        src={IMG.hero}
+        src={heroSrc}
         alt=""
         className="hero-img absolute inset-0 h-full w-full object-cover"
         style={{ filter: "brightness(0.78)", transform: "scale(1.05)" }}
@@ -28,7 +28,7 @@ export function HeroSection() {
           className="mb-[22px] inline-flex items-center font-sans text-[13px] uppercase tracking-eyebrow text-[#f5f1ea]"
         >
           <span aria-hidden className="mr-[14px] inline-block h-px w-[28px] bg-[#f5f1ea]" />
-          {HERO_TAGLINE}
+          {hero.tagline}
         </Reveal>
         <Reveal
           as="h1"
@@ -39,16 +39,14 @@ export function HeroSection() {
             lineHeight: 0.92,
           }}
         >
-          {HERO_LINE_1}
-          <br />
-          <em>{HERO_LINE_2}</em>
+          <RichText text={hero.headline} />
         </Reveal>
         <div className="mt-[36px] flex items-end justify-between font-sans text-[13px] uppercase tracking-meta text-[#f5f1ea] opacity-85 max-md:flex-col max-md:items-start max-md:gap-[18px]">
           <Reveal delay={2} as="span">
-            {HERO_META}
+            {hero.meta}
           </Reveal>
           <Reveal delay={3} className="flex items-center gap-[10px]">
-            <span>SCROLL</span>
+            <span>{hero.scroll}</span>
             <span aria-hidden className="scroll-line h-px w-[40px] bg-[#f5f1ea]" />
           </Reveal>
         </div>

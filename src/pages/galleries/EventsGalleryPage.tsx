@@ -1,6 +1,7 @@
 import { GalleryPage } from "../../features/galleries/GalleryPage";
-import { EVENTS_GALLERY } from "../../features/galleries/galleries.data";
+import { useGallery } from "../../hooks/useGalleries";
 
 export default function EventsGalleryPage() {
-  return <GalleryPage data={EVENTS_GALLERY} />;
+  const data = useGallery("events");
+  return <GalleryPage data={data} />;
 }

@@ -1,11 +1,10 @@
+import homeContent from "../../components/assets/strings/home.json";
 import { Reveal } from "../../components/ui/Reveal";
-
-const PARAGRAPHS = [
-  "YELI is a small studio of four photographers documenting weddings, private celebrations, and editorial events across three continents.",
-  "Our work is unhurried — closer to a film still than a snapshot. We arrive early, stay late, and trust the day to give us its best moments.",
-];
+import { RichText } from "../../components/ui/RichText";
 
 export function ManifestoSection() {
+  const { manifesto } = homeContent;
+
   return (
     <section
       id="about"
@@ -13,18 +12,14 @@ export function ManifestoSection() {
     >
       <div>
         <Reveal>
-          <span className="eyebrow mb-[32px]">001 — The Studio</span>
+          <span className="eyebrow mb-[32px]">{manifesto.eyebrow}</span>
         </Reveal>
         <Reveal as="h2" delay={1} className="display mt-[32px]">
-          We photograph
-          <br />
-          the <em>quiet hours</em>
-          <br />
-          between the vows.
+          <RichText text={manifesto.title} />
         </Reveal>
       </div>
       <div className="space-y-[18px]">
-        {PARAGRAPHS.map((text, idx) => (
+        {manifesto.paragraphs.map((text, idx) => (
           <Reveal
             key={text}
             as="p"

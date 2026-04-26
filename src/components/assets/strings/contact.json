@@ -1,0 +1,59 @@
+{
+  "pageTitle": "Contact — YELI",
+  "banner": {
+    "eyebrow": "Section 05 — Contact",
+    "title": "Tell us<br/>about the <em>day</em>.",
+    "lede": "We respond to every inquiry within two days. We book five weddings per season."
+  },
+  "studioInfo": [
+    {
+      "heading": "Studio",
+      "type": "address",
+      "lines": ["14 rue des Archives", "75004 Paris, France"],
+      "big": true
+    },
+    {
+      "heading": "Email",
+      "type": "email",
+      "email": "hello@yeli.studio",
+      "big": true
+    },
+    {
+      "heading": "By appointment",
+      "type": "appointment",
+      "lines": ["+33 1 00 00 00 00", "Tuesday — Friday, 10h — 18h"]
+    },
+    {
+      "heading": "Follow",
+      "type": "social",
+      "links": [
+        { "label": "Instagram", "href": "https://instagram.com/yeli.studio" },
+        { "label": "Pinterest", "href": "https://pinterest.com" },
+        { "label": "Vimeo", "href": "https://vimeo.com" }
+      ]
+    }
+  ],
+  "form": {
+    "fields": {
+      "yourName": { "label": "Your name", "placeholder": "Jane Aurelio" },
+      "partnerName": { "label": "Partner's name", "placeholder": "Pierre Aurelio" },
+      "email": { "label": "Email", "placeholder": "hello@elsewhere.com" },
+      "date": { "label": "Date (or season)", "placeholder": "June 2026" },
+      "type": { "label": "Type" },
+      "location": { "label": "Where", "placeholder": "Provence, France" },
+      "message": { "label": "Tell us about the day", "placeholder": "Anything you'd like us to know." }
+    },
+    "inquiryTypes": ["Wedding", "Elopement", "Editorial event", "Other"],
+    "submitLabel": "Send inquiry",
+    "submittingLabel": "Sending…",
+    "successMessage": "Thank you. We'll write back within two days.",
+    "errors": {
+      "yourNameRequired": "Please share your name.",
+      "emailInvalid": "Please enter a valid email.",
+      "notConfigured": "Email service is not configured. Please try again later.",
+      "fallback": "We couldn't send your message. Please try again or email hello@yeli.studio.",
+      "prefix": "We couldn't send your message:"
+    },
+    "subjectTemplate": "New {type} inquiry from {name}"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "brand": "YELI",
+  "primary": [
+    { "label": "Portfolio", "href": "/portfolio" },
+    { "label": "Studio", "href": "/studio" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "ctaLabel": "Get in touch",
+  "menu": {
+    "open": "Open menu",
+    "close": "Close menu"
+  },
+  "footer": {
+    "studio": {
+      "heading": "Studio",
+      "lines": ["14 rue des Archives", "75004 Paris"]
+    },
+    "inquiries": {
+      "heading": "Inquiries",
+      "email": "hello@yeli.studio"
+    },
+    "pages": {
+      "heading": "Pages"
+    },
+    "booking": {
+      "heading": "Booking",
+      "note": "2026 dates open."
+    },
+    "copy": "© 2026 YELI",
+    "credit": "Photographs by the studio"
+  }
+}

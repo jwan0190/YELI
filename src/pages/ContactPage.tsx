@@ -1,28 +1,21 @@
 import { useEffect } from "react";
+import contactContent from "../components/assets/strings/contact.json";
 import { PageBanner } from "../components/shared/PageBanner";
 import { Reveal } from "../components/ui/Reveal";
 import { InquiryForm } from "../features/contact/InquiryForm";
 import { StudioInfo } from "../features/contact/StudioInfo";
 
-const PAGE_TITLE = "Contact — YELI";
-
 export default function ContactPage() {
   useEffect(() => {
-    document.title = PAGE_TITLE;
+    document.title = contactContent.pageTitle;
   }, []);
 
   return (
     <>
       <PageBanner
-        eyebrow="Section 05 — Contact"
-        title={
-          <>
-            Tell us
-            <br />
-            about the <em>day</em>.
-          </>
-        }
-        lede="We respond to every inquiry within two days. We book five weddings per season."
+        eyebrow={contactContent.banner.eyebrow}
+        title={contactContent.banner.title}
+        lede={contactContent.banner.lede}
       />
 
       <section className="px-[40px] py-[120px] max-md:px-[22px] max-md:py-[80px]">

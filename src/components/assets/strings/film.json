@@ -1,0 +1,38 @@
+{
+  "pageTitle": "Film & Cinema — YELI",
+  "banner": {
+    "backLabel": "← Back to portfolio",
+    "eyebrow": "Collection 05 · Six reels",
+    "title": "Film <em>& cinema</em>",
+    "lede": "Super-8 and 16mm transfers. Six-minute story films, scored, hand-edited from a season's footage."
+  },
+  "reels": [
+    {
+      "meta": "Reel 06 · Provence · 16mm",
+      "title": "Amélie & <em>Pierre</em>",
+      "description": "Six minutes of a Provençal Saturday — vows in the cypresses, dinner under the bulbs, and the long walk back.",
+      "duration": "6:24",
+      "image": "firstLook"
+    },
+    {
+      "meta": "Reel 05 · Hudson Valley · Super-8",
+      "title": "The lawn <em>ceremony</em>",
+      "description": "Three rolls of Super-8 in the rain, then sun, then candlelight. A film about weather, mostly.",
+      "duration": "5:48",
+      "image": "hudsonValley"
+    },
+    {
+      "meta": "Reel 04 · Tuscany · 16mm",
+      "title": "The long <em>table</em>",
+      "description": "Twelve courses, four hours, one thunderstorm — scored for cello and felt piano.",
+      "duration": "7:02",
+      "image": "longTable"
+    }
+  ],
+  "back": {
+    "eyebrow": "Back to start",
+    "title": "View all <em>collections</em> →",
+    "href": "/portfolio"
+  },
+  "playLabel": "Play"
+}

@@ -1,56 +1,56 @@
-type InfoBlock = {
+import contactContent from "../../components/assets/strings/contact.json";
+
+type SocialLink = { label: string; href: string };
+
+type StudioBlock = {
   heading: string;
-  body: React.ReactNode;
+  type: "address" | "email" | "appointment" | "social";
+  lines?: string[];
+  email?: string;
+  links?: SocialLink[];
+  big?: boolean;
 };
 
-const STUDIO_INFO: InfoBlock[] = [
-  {
-    heading: "Studio",
-    body: (
-      <p className="big">
-        14 rue des Archives
-        <br />
-        75004 Paris, France
+const STUDIO_INFO = contactContent.studioInfo as StudioBlock[];
+
+function renderBlockBody(block: StudioBlock) {
+  const big = block.big ? "big" : undefined;
+
+  if (block.type === "email" && block.email) {
+    return (
+      <p className={big}>
+        <a href={`mailto:${block.email}`}>{block.email}</a>
       </p>
-    ),
-  },
-  {
-    heading: "Email",
-    body: (
-      <p className="big">
-        <a href="mailto:hello@yeli.studio">hello@yeli.studio</a>
+    );
+  }
+
+  if (block.type === "social" && block.links) {
+    return (
+      <p className={big}>
+        {block.links.map((link, i) => (
+          <span key={link.href}>
+            <a href={link.href} target="_blank" rel="noreferrer">
+              {link.label}
+            </a>
+            {i < block.links!.length - 1 ? " · " : null}
+          </span>
+        ))}
       </p>
-    ),
-  },
-  {
-    heading: "By appointment",
-    body: (
-      <p>
-        +33 1 00 00 00 00
-        <br />
-        Tuesday — Friday, 10h — 18h
-      </p>
-    ),
-  },
-  {
-    heading: "Follow",
-    body: (
-      <p>
-        <a href="https://instagram.com/yeli.studio" target="_blank" rel="noreferrer">
-          Instagram
-        </a>{" "}
-        ·{" "}
-        <a href="https://pinterest.com" target="_blank" rel="noreferrer">
-          Pinterest
-        </a>{" "}
-        ·{" "}
-        <a href="https://vimeo.com" target="_blank" rel="noreferrer">
-          Vimeo
-        </a>
-      </p>
-    ),
-  },
-];
+    );
+  }
+
+  const lines = block.lines ?? [];
+  return (
+    <p className={big}>
+      {lines.map((line, i) => (
+        <span key={line}>
+          {line}
+          {i < lines.length - 1 && <br />}
+        </span>
+      ))}
+    </p>
+  );
+}
 
 export function StudioInfo() {
   return (
@@ -64,7 +64,7 @@ export function StudioInfo() {
           >
             {block.heading}
           </h4>
-          {block.body}
+          {renderBlockBody(block)}
         </div>
       ))}
     </div>

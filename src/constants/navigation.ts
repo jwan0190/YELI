@@ -1,3 +1,5 @@
+import navContent from "../components/assets/strings/nav.json";
+
 export type NavLink = {
   label: string;
   href: string;
@@ -17,12 +19,10 @@ export const ROUTES = {
   },
 } as const;
 
-export const PRIMARY_NAV: NavLink[] = [
-  { label: "Portfolio", href: ROUTES.portfolio },
-  { label: "Studio", href: ROUTES.studio },
-  { label: "Contact", href: ROUTES.contact },
-];
+export const PRIMARY_NAV: NavLink[] = navContent.primary;
 
 export const FOOTER_NAV: NavLink[] = PRIMARY_NAV;
 
-export const BRAND_NAME = "YELI";
+export const BRAND_NAME: string = navContent.brand;
+
+export const NAV_CTA_LABEL: string = navContent.ctaLabel;

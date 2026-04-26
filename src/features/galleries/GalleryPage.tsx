@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import galleriesData from "../../components/assets/strings/galleries.json";
 import { PageBanner } from "../../components/shared/PageBanner";
 import { BackLink } from "../../components/ui/BackLink";
 import { ROUTES } from "../../constants/navigation";
@@ -18,7 +19,9 @@ export function GalleryPage({ data }: GalleryPageProps) {
   return (
     <>
       <PageBanner
-        beforeContent={<BackLink to={ROUTES.portfolio}>← Back to portfolio</BackLink>}
+        beforeContent={
+          <BackLink to={ROUTES.portfolio}>{galleriesData.common.backLabel}</BackLink>
+        }
         eyebrow={data.collectionLabel}
         title={data.title}
         lede={data.lede}
@@ -30,7 +33,7 @@ export function GalleryPage({ data }: GalleryPageProps) {
         ))}
       </section>
 
-      <NextCollection eyebrow="Next collection" title={data.next.title} href={data.next.href} />
+      <NextCollection eyebrow={data.next.label} title={data.next.title} href={data.next.href} />
     </>
   );
 }
