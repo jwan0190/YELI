@@ -1,5 +1,5 @@
 import { z } from "zod";
-import contactContent from "../../components/assets/strings/contact.json";
+import contactContent from "../../assets/strings/contact.json";
 
 const TYPES = contactContent.form.inquiryTypes as unknown as readonly [string, ...string[]];
 

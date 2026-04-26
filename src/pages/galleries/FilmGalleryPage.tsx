@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import filmContent from "../../components/assets/strings/film.json";
+import filmContent from "../../assets/strings/film.json";
 import { PageBanner } from "../../components/shared/PageBanner";
 import { BackLink } from "../../components/ui/BackLink";
 import { Reveal } from "../../components/ui/Reveal";

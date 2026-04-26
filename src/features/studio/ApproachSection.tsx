@@ -1,4 +1,4 @@
-import studioContent from "../../components/assets/strings/studio.json";
+import studioContent from "../../assets/strings/studio.json";
 import { Reveal } from "../../components/ui/Reveal";
 import { RichText } from "../../components/ui/RichText";
 import { useImage } from "../../hooks/useImages";

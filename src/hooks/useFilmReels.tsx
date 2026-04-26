@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 
-import filmData from "../components/assets/strings/film.json";
+import filmData from "../assets/strings/film.json";
 import type { FilmReelData } from "../features/galleries/FilmReel";
 import { useImages, type ImageKey } from "./useImages";
 

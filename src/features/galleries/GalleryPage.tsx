@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import galleriesData from "../../components/assets/strings/galleries.json";
+import galleriesData from "../../assets/strings/galleries.json";
 import { PageBanner } from "../../components/shared/PageBanner";
 import { BackLink } from "../../components/ui/BackLink";
 import { ROUTES } from "../../constants/navigation";

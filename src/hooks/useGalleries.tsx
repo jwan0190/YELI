@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 
-import galleriesData from "../components/assets/strings/galleries.json";
+import galleriesData from "../assets/strings/galleries.json";
 import type { FrameRatio, GalleryPageData, GalleryRow, RowVariant } from "../types/gallery.types";
 import { useImages, type ImageKey } from "./useImages";
 

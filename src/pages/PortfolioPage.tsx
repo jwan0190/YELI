@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import portfolioContent from "../components/assets/strings/portfolio.json";
+import portfolioContent from "../assets/strings/portfolio.json";
 import { PageBanner } from "../components/shared/PageBanner";
 import { Button } from "../components/ui/Button";
 import { Reveal } from "../components/ui/Reveal";

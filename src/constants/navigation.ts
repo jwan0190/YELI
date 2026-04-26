@@ -1,4 +1,4 @@
-import navContent from "../components/assets/strings/nav.json";
+import navContent from "../assets/strings/nav.json";
 
 export type NavLink = {
   label: string;

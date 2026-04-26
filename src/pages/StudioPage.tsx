@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import studioContent from "../components/assets/strings/studio.json";
+import studioContent from "../assets/strings/studio.json";
 import { PageBanner } from "../components/shared/PageBanner";
 import { ApproachSection } from "../features/studio/ApproachSection";
 import { PrinciplesSection } from "../features/studio/PrinciplesSection";

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import navContent from "../assets/strings/nav.json";
+import navContent from "../../assets/strings/nav.json";
 import { BRAND_NAME, FOOTER_NAV, ROUTES } from "../../constants/navigation";
 
 const FOOTER = navContent.footer;

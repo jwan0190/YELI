@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 
-import portfolioData from "../components/assets/strings/portfolio.json";
+import portfolioData from "../assets/strings/portfolio.json";
 import type { CollectionRowProps } from "../features/portfolio/CollectionRow";
 import { useImages, type ImageKey } from "./useImages";
 

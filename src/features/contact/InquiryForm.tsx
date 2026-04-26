@@ -1,7 +1,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import contactContent from "../../components/assets/strings/contact.json";
+import contactContent from "../../assets/strings/contact.json";
 import { INQUIRY_TYPES, inquirySchema, type InquiryForm as InquiryFormValues } from "./contact.schema";
 import { SelectField, TextAreaField, TextField } from "./Field";
 

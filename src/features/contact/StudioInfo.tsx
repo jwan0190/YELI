@@ -1,4 +1,4 @@
-import contactContent from "../../components/assets/strings/contact.json";
+import contactContent from "../../assets/strings/contact.json";
 
 type SocialLink = { label: string; href: string };
 

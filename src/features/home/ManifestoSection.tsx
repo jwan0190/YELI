@@ -1,4 +1,4 @@
-import homeContent from "../../components/assets/strings/home.json";
+import homeContent from "../../assets/strings/home.json";
 import { Reveal } from "../../components/ui/Reveal";
 import { RichText } from "../../components/ui/RichText";
 

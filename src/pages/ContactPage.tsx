@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import contactContent from "../components/assets/strings/contact.json";
+import contactContent from "../assets/strings/contact.json";
 import { PageBanner } from "../components/shared/PageBanner";
 import { Reveal } from "../components/ui/Reveal";
 import { InquiryForm } from "../features/contact/InquiryForm";

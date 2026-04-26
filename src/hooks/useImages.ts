@@ -1,24 +1,24 @@
 import { useMemo } from "react";
 
-import heroImg from "../components/assets/home/hero.jpg";
+import heroImg from "../assets/home/hero.jpg";
 
-import provenceImg from "../components/assets/weddings/provence.jpg";
-import comoImg from "../components/assets/weddings/como.jpg";
-import hudsonValleyImg from "../components/assets/weddings/hudson-valley.jpg";
-import kyotoImg from "../components/assets/weddings/kyoto.jpg";
-import petalsImg from "../components/assets/weddings/petals.jpg";
+import provenceImg from "../assets/weddings/provence.jpg";
+import comoImg from "../assets/weddings/como.jpg";
+import hudsonValleyImg from "../assets/weddings/hudson-valley.jpg";
+import kyotoImg from "../assets/weddings/kyoto.jpg";
+import petalsImg from "../assets/weddings/petals.jpg";
 
-import brideImg from "../components/assets/portraits/bride.jpg";
-import firstLookImg from "../components/assets/portraits/first-look.jpg";
-import hourBeforeImg from "../components/assets/portraits/hour-before.jpg";
+import brideImg from "../assets/portraits/bride.jpg";
+import firstLookImg from "../assets/portraits/first-look.jpg";
+import hourBeforeImg from "../assets/portraits/hour-before.jpg";
 
-import longTableImg from "../components/assets/events/long-table.jpg";
-import vernissageImg from "../components/assets/events/vernissage.jpg";
-import brandDinnerImg from "../components/assets/events/brand-dinner.jpg";
+import longTableImg from "../assets/events/long-table.jpg";
+import vernissageImg from "../assets/events/vernissage.jpg";
+import brandDinnerImg from "../assets/events/brand-dinner.jpg";
 
-import vowImg from "../components/assets/moments/vow.jpg";
-import toastImg from "../components/assets/moments/toast.jpg";
-import danceImg from "../components/assets/moments/dance.jpg";
+import vowImg from "../assets/moments/vow.jpg";
+import toastImg from "../assets/moments/toast.jpg";
+import danceImg from "../assets/moments/dance.jpg";
 
 export type ImageKey =
   | "hero"

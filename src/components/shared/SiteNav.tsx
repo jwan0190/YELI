@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import navContent from "../assets/strings/nav.json";
+import navContent from "../../assets/strings/nav.json";
 import { BRAND_NAME, NAV_CTA_LABEL, PRIMARY_NAV, ROUTES } from "../../constants/navigation";
 
 export function SiteNav() {
