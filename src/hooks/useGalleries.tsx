@@ -4,7 +4,13 @@ import galleriesData from "../assets/strings/galleries.json";
 import type { FrameRatio, GalleryPageData, GalleryRow, RowVariant } from "../types/gallery.types";
 import { useImages, type ImageKey } from "./useImages";
 
-export type GallerySlug = "weddings" | "events" | "elopements" | "portraits";
+export type GallerySlug =
+  | "weddings"
+  | "events"
+  | "elopements"
+  | "portraits"
+  | "harbour"
+  | "golf";
 
 type RawItem = { image: string; ratio: string; caption?: string };
 type RawRow = { variant: string; items: RawItem[] };
@@ -50,6 +56,8 @@ export function useGalleries(): Record<GallerySlug, GalleryPageData> {
       events: buildPage("events", galleriesData.events as RawSection),
       elopements: buildPage("elopements", galleriesData.elopements as RawSection),
       portraits: buildPage("portraits", galleriesData.portraits as RawSection),
+      harbour: buildPage("harbour", galleriesData.harbour as RawSection),
+      golf: buildPage("golf", galleriesData.golf as RawSection),
     };
   }, [img]);
 }

@@ -20,6 +20,13 @@ import vowImg from "../assets/moments/vow.jpg";
 import toastImg from "../assets/moments/toast.jpg";
 import danceImg from "../assets/moments/dance.jpg";
 
+import yachtDeckImg from "../assets/harbour/maddison.webp";
+import harbourToastImg from "../assets/harbour/toast.webp";
+
+import golfPuttImg from "../assets/golf/putt.webp";
+import golfGreenImg from "../assets/golf/green.webp";
+import golfCourseImg from "../assets/golf/course.webp";
+
 export type ImageKey =
   | "hero"
   | "provence"
@@ -35,7 +42,12 @@ export type ImageKey =
   | "brandDinner"
   | "vow"
   | "toast"
-  | "dance";
+  | "dance"
+  | "yachtDeck"
+  | "harbourToast"
+  | "golfPutt"
+  | "golfGreen"
+  | "golfCourse";
 
 const IMAGES: Record<ImageKey, string> = {
   hero: heroImg,
@@ -53,6 +65,11 @@ const IMAGES: Record<ImageKey, string> = {
   vow: vowImg,
   toast: toastImg,
   dance: danceImg,
+  yachtDeck: yachtDeckImg,
+  harbourToast: harbourToastImg,
+  golfPutt: golfPuttImg,
+  golfGreen: golfGreenImg,
+  golfCourse: golfCourseImg,
 };
 
 export function useImages() {

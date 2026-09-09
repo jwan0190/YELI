@@ -65,6 +65,30 @@
       "description": "Super-8 and 16mm transfers — six-minute story films, scored, hand-edited from a season's footage.",
       "ctaLabel": "View films",
       "href": "/portfolio/film"
+    },
+    {
+      "key": "harbour",
+      "number": "№ 06",
+      "frameCount": "Sydney Harbour",
+      "image": "yachtDeck",
+      "alt": "Harbour charter",
+      "eyebrow": "Collection 06",
+      "title": "Harbour <em>days</em>",
+      "description": "A private charter out of Sydney Harbour — the skyline on one side, open water on the other, and a long afternoon in between.",
+      "ctaLabel": "View harbour",
+      "href": "/portfolio/harbour"
+    },
+    {
+      "key": "golf",
+      "number": "№ 07",
+      "frameCount": "Australia National Final",
+      "image": "golfPutt",
+      "alt": "Golf tournament",
+      "eyebrow": "Collection 07",
+      "title": "Golf <em>& greens</em>",
+      "description": "The 2026 Global Chinese Elite Golf Challenge, Australia National Final — tournament coverage from first tee to the last putt of the day.",
+      "ctaLabel": "View golf",
+      "href": "/portfolio/golf"
     }
   ],
   "cta": {

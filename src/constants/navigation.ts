@@ -16,6 +16,8 @@ export const ROUTES = {
     elopements: "/portfolio/elopements",
     portraits: "/portfolio/portraits",
     film: "/portfolio/film",
+    harbour: "/portfolio/harbour",
+    golf: "/portfolio/golf",
   },
 } as const;
 
