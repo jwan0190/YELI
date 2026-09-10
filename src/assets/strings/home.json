@@ -20,7 +20,7 @@
         "chapter": "Chapter I — Events",
         "title": "Rooms, <em>briefly full</em>.",
         "copy": "Galas, launches, conferences and private charters. We document the room as it happens — the speeches, the toasts, and the hour after.",
-        "image": "https://i.pinimg.com/originals/83/62/4c/83624c741fff1a11be500291854259b6.jpg",
+        "collection": "boat-party",
         "caption": "Harbour party — Sydney"
       },
       {
@@ -34,8 +34,8 @@
         "chapter": "Chapter III — Real Estate",
         "title": "Light in <em>every room</em>.",
         "copy": "Architectural and interior photography for listings, developments and hospitality — styled, staged, and shot at the right hour.",
-        "image": "https://i.pinimg.com/originals/94/40/a3/9440a3ab5494f47fbf6753035b61b3fc.jpg",
-        "caption": "Boardroom — Hilton Sydney"
+        "collection": "real-estate",
+        "caption": "Courtyard light"
       },
       {
         "chapter": "Chapter IV — Wedding",

@@ -6,12 +6,18 @@ import portfolioContent from "../assets/strings/portfolio.json";
 import { ROUTES } from "../constants/navigation";
 import type { CollectionRowProps } from "../features/portfolio/CollectionRow";
 import { fetchPortfolio } from "../services/portfolioService";
-import type { GalleryPageData } from "../types/gallery.types";
-import type { Collection, Portfolio } from "../types/portfolio.types";
+import type { Collection, CollectionGallery, Portfolio } from "../types/portfolio.types";
 
 export const PORTFOLIO_QUERY_KEY = ["portfolio"] as const;
 
 export type CollectionSummary = Omit<CollectionRowProps, "reverse">;
+
+/** Gallery text plus its photos and the link to the following collection. */
+export type CollectionGalleryData = CollectionGallery & {
+  slug: string;
+  title: string;
+  next: { label: string; title: string; href: string };
+};
 
 function collectionHref(collection: Collection): string {
   return collection.href ?? ROUTES.collection(collection.slug);
@@ -31,7 +37,7 @@ function toSummary(collection: Collection): CollectionSummary {
   };
 }
 
-function toGalleryPage(collections: Collection[], index: number): GalleryPageData | null {
+function toGalleryData(collections: Collection[], index: number): CollectionGalleryData | null {
   const collection = collections[index];
   if (!collection?.gallery) return null;
 
@@ -41,12 +47,9 @@ function toGalleryPage(collections: Collection[], index: number): GalleryPageDat
     : { title: portfolioContent.allCollectionsTitle, href: ROUTES.portfolio };
 
   return {
+    ...collection.gallery,
     slug: collection.slug,
-    banner: collection.gallery.pageTitle,
-    collectionLabel: collection.gallery.collectionLabel,
     title: collection.title,
-    lede: collection.gallery.lede,
-    rows: collection.gallery.rows,
     next: { label: galleriesContent.common.nextLabel, ...next },
   };
 }
@@ -71,10 +74,20 @@ export function useCollections() {
 /** A single collection's gallery; `data` is `null` when the slug is unknown or has no gallery. */
 export function useCollectionGallery(slug: string | undefined) {
   const select = useCallback(
-    (data: Portfolio): GalleryPageData | null => {
+    (data: Portfolio): CollectionGalleryData | null => {
       const index = data.collections.findIndex((collection) => collection.slug === slug);
-      return index === -1 ? null : toGalleryPage(data.collections, index);
+      return index === -1 ? null : toGalleryData(data.collections, index);
     },
+    [slug],
+  );
+  return usePortfolioQuery(select);
+}
+
+/** Cover image of a collection by slug, for pages that reference one (e.g. the home chapters). */
+export function useCollectionCover(slug: string | undefined) {
+  const select = useCallback(
+    (data: Portfolio): string | null =>
+      data.collections.find((collection) => collection.slug === slug)?.cover ?? null,
     [slug],
   );
   return usePortfolioQuery(select);

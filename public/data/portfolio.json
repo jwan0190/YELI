@@ -2,757 +2,85 @@
   "collections": [
     {
       "slug": "boat-party",
+      "images": "boat-party",
       "number": "№ 01",
-      "frameCount": "13 frames",
-      "cover": "https://i.pinimg.com/originals/83/62/4c/83624c741fff1a11be500291854259b6.jpg",
-      "alt": "Friends toasting on the bow of a yacht with the Sydney skyline behind them",
       "eyebrow": "Collection 01",
       "title": "Harbour <em>party</em>",
       "description": "A private charter aboard Maddison on Sydney Harbour — canapés on deck, a swim off the stern, and a long afternoon under the bridge.",
       "ctaLabel": "View harbour party",
+      "alt": "Friends toasting on the bow of a yacht with the Sydney skyline behind them",
       "gallery": {
         "pageTitle": "Harbour Party — YELI",
-        "collectionLabel": "Collection 01 · 13 frames",
-        "lede": "A private charter out of Sydney Harbour. The city on one side, open water on the other, and thirteen friends in between.",
-        "rows": [
-          {
-            "variant": "r-1",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/5f/d9/6e/5fd96e085e9f1d4c9b57c482879dbc68.jpg",
-                "ratio": "cinema",
-                "caption": "Maddison — Sydney Harbour"
-              }
-            ]
-          },
-          {
-            "variant": "r-3",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/a2/9b/5a/a29b5a496f94bda0a73b0cbff0c39d64.jpg",
-                "ratio": "tall",
-                "caption": "Canapés on deck"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/78/33/1b/78331b66c6ecf3593e8a15f1d87a80f2.jpg",
-                "ratio": "tall",
-                "caption": "Pastries and tomato"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/cb/9b/84/cb9b848dd5c2952ca669607a5e94f20f.jpg",
-                "ratio": "tall",
-                "caption": "Petit fours"
-              }
-            ]
-          },
-          {
-            "variant": "r-asym-a",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/83/62/4c/83624c741fff1a11be500291854259b6.jpg",
-                "ratio": "wide",
-                "caption": "A toast under the skyline"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/5f/61/f9/5f61f9c491ab240c92af3e7fccecdaef.jpg",
-                "ratio": "wide",
-                "caption": "On the bow"
-              }
-            ]
-          },
-          {
-            "variant": "r-2",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/3b/4c/02/3b4c022a356705dee6a14da37b19b5aa.jpg",
-                "ratio": "wide",
-                "caption": "The whole crew"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/eb/db/c3/ebdbc301291fbc9665e6128d45116651.jpg",
-                "ratio": "wide",
-                "caption": "Under the bridge"
-              }
-            ]
-          },
-          {
-            "variant": "r-2",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/16/35/cb/1635cb28253982cd60163ec9704d856c.jpg",
-                "ratio": "tall",
-                "caption": "Maddison from above"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/89/b5/a3/89b5a3620ffa3c1810d83cd6ce36f0fd.jpg",
-                "ratio": "tall",
-                "caption": "The skipper"
-              }
-            ]
-          },
-          {
-            "variant": "r-asym-a",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/d7/f5/38/d7f53829b2f61d6b805b667ba2b4ee93.jpg",
-                "ratio": "wide",
-                "caption": "Off the stern"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/61/13/3b/61133bd7d6b51d137001f739c7a48077.jpg",
-                "ratio": "wide",
-                "caption": "The surprise"
-              }
-            ]
-          },
-          {
-            "variant": "r-1",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/64/b3/65/64b365c184c4763e2cf4fc93931a2542.jpg",
-                "ratio": "cinema",
-                "caption": "Back to the marina"
-              }
-            ]
-          }
-        ]
+        "lede": "A private charter out of Sydney Harbour. The city on one side, open water on the other, and thirteen friends in between."
       }
     },
     {
       "slug": "golf",
+      "images": "golf",
       "number": "№ 02",
-      "frameCount": "28 frames",
-      "cover": "https://i.pinimg.com/originals/62/b0/73/62b073a5106253177fa2265dca5402a5.jpg",
-      "alt": "A golfer lining up a putt on the green",
       "eyebrow": "Collection 02",
       "title": "Golf <em>& greens</em>",
       "description": "The 2026 Global Chinese Elite Golf Challenge, Australia National Final — tournament coverage from the first tee to the last putt of the day.",
       "ctaLabel": "View golf",
+      "alt": "A golfer lining up a putt on the green",
       "gallery": {
         "pageTitle": "Golf — YELI",
-        "collectionLabel": "Collection 02 · 28 frames",
-        "lede": "The 2026 Global Chinese Elite Golf Challenge, Australia National Final — from first tee to the last putt.",
-        "rows": [
-          {
-            "variant": "r-1",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/d1/b3/f2/d1b3f204600ad4affcc506bf79dcbefb.jpg",
-                "ratio": "cinema",
-                "caption": "The course"
-              }
-            ]
-          },
-          {
-            "variant": "r-3",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/fa/d5/90/fad590c3c97955c42c176ce1e3ebb559.jpg",
-                "ratio": "tall",
-                "caption": "Tee shot"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/4b/34/79/4b3479f83a38a4bd330b795dc8f84991.jpg",
-                "ratio": "tall",
-                "caption": "Follow-through"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/50/9f/f8/509ff8acadeb6b09d90a795d099a4422.jpg",
-                "ratio": "tall",
-                "caption": "Off the tee"
-              }
-            ]
-          },
-          {
-            "variant": "r-asym-a",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/c0/d4/dc/c0d4dc248648d4c8d1b142f54d298cea.jpg",
-                "ratio": "wide",
-                "caption": "The field"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/97/3a/56/973a56b5de59f2d1c4a70ccecd480d28.jpg",
-                "ratio": "wide",
-                "caption": "Opening address"
-              }
-            ]
-          },
-          {
-            "variant": "r-3",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/c0/a3/17/c0a3172a1d7f3febbb39319fce134a9e.jpg",
-                "ratio": "portrait",
-                "caption": "On the green"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/bd/f0/51/bdf051c30d7886fe018b49a4febcb86e.jpg",
-                "ratio": "portrait",
-                "caption": "The pin"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/aa/cd/d9/aacdd910d3af2b9b311e8a2799f270db.jpg",
-                "ratio": "portrait",
-                "caption": "Between holes"
-              }
-            ]
-          },
-          {
-            "variant": "r-2",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/62/b0/73/62b073a5106253177fa2265dca5402a5.jpg",
-                "ratio": "tall",
-                "caption": "The putt"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/1d/1c/db/1d1cdbcc662806ed7a57dda3f721683a.jpg",
-                "ratio": "tall",
-                "caption": "Reading the line"
-              }
-            ]
-          },
-          {
-            "variant": "r-1",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/09/a0/dc/09a0dca200fa4cab3dfb60a552a09715.jpg",
-                "ratio": "cinema",
-                "caption": "Australia National Final"
-              }
-            ]
-          },
-          {
-            "variant": "r-3",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/56/a5/5b/56a55b43c22a67d10002158073675a41.jpg",
-                "ratio": "portrait",
-                "caption": "Guojiao 1573"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/da/ac/fa/daacfab2d238db7922296dfdcc20d308.jpg",
-                "ratio": "portrait",
-                "caption": "Player gifts"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/25/8d/f3/258df355cc9e17fae67c19bbaa8282c5.jpg",
-                "ratio": "portrait",
-                "caption": "Sponsor table"
-              }
-            ]
-          },
-          {
-            "variant": "r-asym-a",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/59/f6/b2/59f6b2a64ed54898ae317aeddf879e5e.jpg",
-                "ratio": "wide",
-                "caption": "First tee"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/79/aa/15/79aa152da5a6126c0d87876c0bff883e.jpg",
-                "ratio": "wide",
-                "caption": "Carts out"
-              }
-            ]
-          },
-          {
-            "variant": "r-3",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/df/88/44/df8844a5174e675bb88c9114fb9981ae.jpg",
-                "ratio": "tall",
-                "caption": "Fairway"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/ea/d5/16/ead516c42a93a9671bcf72b3f86e00d1.jpg",
-                "ratio": "tall",
-                "caption": "Watching it land"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/dd/0c/44/dd0c441d2a7b83981df20642a34b7bbc.jpg",
-                "ratio": "tall",
-                "caption": "Marking the ball"
-              }
-            ]
-          },
-          {
-            "variant": "r-2",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/f9/69/7a/f9697ac84b061fc5d45b8e79280a4ca5.jpg",
-                "ratio": "wide",
-                "caption": "Down the fairway"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/a1/50/3a/a1503a4a24b23ce5224eca860eaedf0c.jpg",
-                "ratio": "wide",
-                "caption": "Reading the green"
-              }
-            ]
-          },
-          {
-            "variant": "r-3",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/38/f8/f5/38f8f5168be91bcaebf03ed48b914e63.jpg",
-                "ratio": "portrait",
-                "caption": "The teams"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/6f/1e/f2/6f1ef2ab8c5a4333ee2423965a6b20b9.jpg",
-                "ratio": "portrait",
-                "caption": "Before the round"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/f2/73/2f/f2732fad79283ff55c6c5988350296c5.jpg",
-                "ratio": "portrait",
-                "caption": "Foursome"
-              }
-            ]
-          },
-          {
-            "variant": "r-3",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/2f/5f/c9/2f5fc992f2336c55e345cc6d4edf0b74.jpg",
-                "ratio": "tall",
-                "caption": "Registration"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/94/90/4b/94904b17564aae25ac6d2ba3b4558f3c.jpg",
-                "ratio": "tall",
-                "caption": "Cart line"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/12/f5/ab/12f5abfd2353cd747b4f37439b40ac6c.jpg",
-                "ratio": "tall",
-                "caption": "Prize table"
-              }
-            ]
-          }
-        ]
+        "lede": "The 2026 Global Chinese Elite Golf Challenge, Australia National Final — from first tee to the last putt."
       }
     },
     {
       "slug": "awards-dinner",
+      "images": "ball",
       "number": "№ 03",
-      "frameCount": "20 frames",
-      "cover": "https://i.pinimg.com/originals/11/54/3c/11543cf81a76c45d194764154f46c5d6.jpg",
-      "alt": "Two guests greeting each other at the awards dinner",
       "eyebrow": "Collection 03",
       "title": "Awards <em>dinner</em>",
       "description": "The evening after the final — a ballroom, a trophy, and the prize draw. Toasts, certificates, and the quiet hour after the speeches.",
       "ctaLabel": "View awards dinner",
+      "alt": "Two guests greeting each other at the awards dinner",
       "gallery": {
         "pageTitle": "Awards Dinner — YELI",
-        "collectionLabel": "Collection 03 · 20 frames",
-        "lede": "The evening after the final. A ballroom, a trophy, and the prize draw — documented from the first toast to the last photograph.",
-        "rows": [
-          {
-            "variant": "r-1",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/4e/f7/2f/4ef72f0af5ba43c9c73b93911da2a040.jpg",
-                "ratio": "cinema",
-                "caption": "The ballroom"
-              }
-            ]
-          },
-          {
-            "variant": "r-3",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/d0/1d/7f/d01d7f092ab088c5f4e1866f26383d9d.jpg",
-                "ratio": "tall",
-                "caption": "The dragon"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/12/33/a7/1233a7fcc8165788ee29d91025071fcc.jpg",
-                "ratio": "tall",
-                "caption": "Guojiao"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/79/f0/59/79f0598d4d2a98087d0897dcbfc3ea82.jpg",
-                "ratio": "tall",
-                "caption": "The horse"
-              }
-            ]
-          },
-          {
-            "variant": "r-asym-a",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/61/b9/cb/61b9cbf2b92ea9ddbbd967903e0f0e48.jpg",
-                "ratio": "wide",
-                "caption": "Awards dinner"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/87/64/61/8764614ac4ae1beffed53cf1a00c099f.jpg",
-                "ratio": "wide",
-                "caption": "The draw"
-              }
-            ]
-          },
-          {
-            "variant": "r-3",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/9c/83/0c/9c830c0ac35189eb93243cb9c8e81705.jpg",
-                "ratio": "portrait",
-                "caption": "The stage"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/c2/0e/60/c20e602e95dfeac37ca93be55d66c879.jpg",
-                "ratio": "portrait",
-                "caption": "Table setting"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/25/ec/75/25ec75fde6ab6aa7bdf10b7dd2bbf3f0.jpg",
-                "ratio": "portrait",
-                "caption": "The trophy"
-              }
-            ]
-          },
-          {
-            "variant": "r-2",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/27/2b/c3/272bc3220f361ab0148c7e5618a86555.jpg",
-                "ratio": "wide",
-                "caption": "Certificates"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/d2/c3/f3/d2c3f3a8a11f4173a3436572598cab47.jpg",
-                "ratio": "wide",
-                "caption": "Handover"
-              }
-            ]
-          },
-          {
-            "variant": "r-2",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/b7/71/15/b77115a24f03ebb4b928645d36fa14ef.jpg",
-                "ratio": "tall",
-                "caption": "Place settings"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/23/8d/17/238d173108e5622d4c76c08f84c3cc6d.jpg",
-                "ratio": "tall",
-                "caption": "Cheers"
-              }
-            ]
-          },
-          {
-            "variant": "r-asym-a",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/e3/e9/3e/e3e93eca8e97331631c6cd04c6785193.jpg",
-                "ratio": "wide",
-                "caption": "The MCs"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/3f/9b/dd/3f9bddc091149bb90239800fb8f5bcc3.jpg",
-                "ratio": "wide",
-                "caption": "Between courses"
-              }
-            ]
-          },
-          {
-            "variant": "r-2",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/11/54/3c/11543cf81a76c45d194764154f46c5d6.jpg",
-                "ratio": "portrait",
-                "caption": "Old friends"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/65/ab/ae/65abae8ef8cded2097da0180c22e01dc.jpg",
-                "ratio": "portrait",
-                "caption": "The speech"
-              }
-            ]
-          },
-          {
-            "variant": "r-asym-a",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/77/33/02/7733023a7a3d4e00853b4113b5b3b027.jpg",
-                "ratio": "wide",
-                "caption": "Detail"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/48/4e/ea/484eeaec7933d98041b9dfb1787b5891.jpg",
-                "ratio": "wide",
-                "caption": "The team"
-              }
-            ]
-          },
-          {
-            "variant": "r-1",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/5b/28/90/5b2890879c4a617d51f84263674e8dba.jpg",
-                "ratio": "cinema",
-                "caption": "The winners"
-              }
-            ]
-          }
-        ]
+        "lede": "The evening after the final. A ballroom, a trophy, and the prize draw — documented from the first toast to the last photograph."
       }
     },
     {
       "slug": "shenzhen-competition",
+      "images": "shenzhen",
       "number": "№ 04",
-      "frameCount": "29 frames",
-      "cover": "https://i.pinimg.com/originals/65/74/19/657419aa83108b6e17f31fa42b366f1a.jpg",
-      "alt": "Two guests in front of the competition backdrop",
       "eyebrow": "Collection 04",
       "title": "Innovation <em>competition</em>",
       "description": "The 9th China (Shenzhen) Innovation & Entrepreneurship International Competition, Sydney Division — keynotes, signings, and the room in between.",
       "ctaLabel": "View competition",
+      "alt": "Two guests in front of the competition backdrop",
       "gallery": {
         "pageTitle": "Shenzhen Competition — YELI",
-        "collectionLabel": "Collection 04 · 29 frames",
-        "lede": "The 9th China (Shenzhen) Innovation & Entrepreneurship International Competition, Sydney Division. Hilton Sydney, November 2025.",
-        "rows": [
-          {
-            "variant": "r-1",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/a3/55/cd/a355cd85bb27b53f9f649e0c4ee4b065.jpg",
-                "ratio": "cinema",
-                "caption": "Hilton Sydney"
-              }
-            ]
-          },
-          {
-            "variant": "r-asym-a",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/93/a7/c0/93a7c00701571e65dec1b87856fd0642.jpg",
-                "ratio": "wide",
-                "caption": "The signing"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/bc/aa/6b/bcaa6b12850d9680298aa4f9caa592bb.jpg",
-                "ratio": "wide",
-                "caption": "Opening"
-              }
-            ]
-          },
-          {
-            "variant": "r-3",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/65/74/19/657419aa83108b6e17f31fa42b366f1a.jpg",
-                "ratio": "tall",
-                "caption": "Guests"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/99/a5/33/99a5339d0e5fd44ac7c017b796f10d7e.jpg",
-                "ratio": "tall",
-                "caption": "At the table"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/b8/20/ba/b820baf23724c426799c15a0af6eeb2f.jpg",
-                "ratio": "tall",
-                "caption": "Two flags"
-              }
-            ]
-          },
-          {
-            "variant": "r-2",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/93/9a/0a/939a0aa2f31ad09a50689f0e65fe0361.jpg",
-                "ratio": "wide",
-                "caption": "Dapeng New District"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/d2/fc/ff/d2fcffd04e810a46a38ff94d82e1179b.jpg",
-                "ratio": "wide",
-                "caption": "Keynote"
-              }
-            ]
-          },
-          {
-            "variant": "r-asym-a",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/78/e1/ba/78e1ba04603367bab6ab98cd10da484d.jpg",
-                "ratio": "wide",
-                "caption": "Sydney · Australia Division"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/34/40/67/344067fff2f83022d4f16116e581fcc8.jpg",
-                "ratio": "wide",
-                "caption": "Programmes"
-              }
-            ]
-          },
-          {
-            "variant": "r-2",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/bb/09/f4/bb09f46dc142b55529576ef3cc3acb41.jpg",
-                "ratio": "tall",
-                "caption": "Address"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/30/1e/e2/301ee2cf6dfee528724a94f4b2ccc413.jpg",
-                "ratio": "tall",
-                "caption": "The banner"
-              }
-            ]
-          },
-          {
-            "variant": "r-2",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/75/5a/ce/755ace0717a67ba79ff11886932892a7.jpg",
-                "ratio": "wide",
-                "caption": "Presentation"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/5e/f1/82/5ef182351da0e21e4f91878456ed3d8d.jpg",
-                "ratio": "wide",
-                "caption": "Pitch"
-              }
-            ]
-          },
-          {
-            "variant": "r-asym-a",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/a1/c7/33/a1c73395f210a50703437048d0b3c9df.jpg",
-                "ratio": "wide",
-                "caption": "Introductions"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/27/74/3c/27743c2f7800cc9749944b6ab99997d6.jpg",
-                "ratio": "wide",
-                "caption": "Between sessions"
-              }
-            ]
-          },
-          {
-            "variant": "r-1",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/05/2d/14/052d14452a5bfdca7c60b94d607ff93b.jpg",
-                "ratio": "cinema",
-                "caption": "The panel"
-              }
-            ]
-          },
-          {
-            "variant": "r-2",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/c3/41/59/c34159891501f32ac071e9dbfb2ee5c3.jpg",
-                "ratio": "portrait",
-                "caption": "Shenzhen Dapeng"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/fb/8e/46/fb8e46c34672eed51ce09b51996fd96a.jpg",
-                "ratio": "portrait",
-                "caption": "Notes"
-              }
-            ]
-          },
-          {
-            "variant": "r-asym-a",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/f6/96/32/f69632f42b6f27c9b3c1dc58fbf89b85.jpg",
-                "ratio": "wide",
-                "caption": "Registration"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/16/1f/1c/161f1c17c777e12940bb4f3437dbdf57.jpg",
-                "ratio": "wide",
-                "caption": "Sign-in"
-              }
-            ]
-          },
-          {
-            "variant": "r-2",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/00/ef/ee/00efeefa52b93ed46f968902e2ef892c.jpg",
-                "ratio": "wide",
-                "caption": "Welcome"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/ef/2c/7b/ef2c7b38f483b1284e624bc674c160cf.jpg",
-                "ratio": "wide",
-                "caption": "Remarks"
-              }
-            ]
-          },
-          {
-            "variant": "r-asym-a",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/a6/c9/0e/a6c90e3161e736da348f1f98028059c8.jpg",
-                "ratio": "wide",
-                "caption": "The room"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/f6/c3/de/f6c3decbc0d3a6b26d7413a619fa49e4.jpg",
-                "ratio": "wide",
-                "caption": "Audience"
-              }
-            ]
-          },
-          {
-            "variant": "r-3",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/90/9b/c0/909bc0f29b800f3d5ca88120c5571a6a.jpg",
-                "ratio": "wide",
-                "caption": "Before doors"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/94/40/a3/9440a3ab5494f47fbf6753035b61b3fc.jpg",
-                "ratio": "wide",
-                "caption": "The boardroom"
-              },
-              {
-                "src": "https://i.pinimg.com/originals/7e/ab/a0/7eaba05bf49c7fcb8910f1dc8ba05c8b.jpg",
-                "ratio": "wide",
-                "caption": "Set"
-              }
-            ]
-          },
-          {
-            "variant": "r-1",
-            "items": [
-              {
-                "src": "https://i.pinimg.com/originals/c6/9f/79/c69f799fa7a799b460722a979a40db48.jpg",
-                "ratio": "cinema",
-                "caption": "Closing session"
-              }
-            ]
-          }
-        ]
+        "lede": "The 9th China (Shenzhen) Innovation & Entrepreneurship International Competition, Sydney Division. Hilton Sydney, November 2025."
+      }
+    },
+    {
+      "slug": "real-estate",
+      "images": "real-estate",
+      "number": "№ 05",
+      "eyebrow": "Collection 05",
+      "title": "Light in <em>every room</em>",
+      "description": "Architectural and interior photography for listings, developments and hospitality — styled, staged, and shot at the right hour.",
+      "ctaLabel": "View real estate",
+      "alt": "Sunlit living room opening onto a courtyard",
+      "gallery": {
+        "pageTitle": "Real Estate — YELI",
+        "lede": "Interiors photographed at the hour the light is kindest — living spaces, bedrooms and the details that sell a home."
       }
     },
     {
       "slug": "film",
-      "number": "№ 05",
+      "images": "film",
+      "href": "/portfolio/film",
+      "number": "№ 06",
       "frameCount": "Films",
-      "cover": "https://i.pinimg.com/originals/16/35/cb/1635cb28253982cd60163ec9704d856c.jpg",
-      "alt": "Film & Cinema",
-      "eyebrow": "Collection 05",
+      "eyebrow": "Collection 06",
       "title": "Film <em>& cinema</em>",
       "description": "Short story films cut from a season's footage — scored, hand-edited, and delivered alongside the stills.",
       "ctaLabel": "View films",
-      "href": "/portfolio/film"
+      "alt": "Film & Cinema"
     }
   ]
 }

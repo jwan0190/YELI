@@ -2,6 +2,7 @@ import homeContent from "../../assets/strings/home.json";
 import { Frame } from "../../components/ui/Frame";
 import { Reveal } from "../../components/ui/Reveal";
 import { RichText } from "../../components/ui/RichText";
+import { useCollectionCover } from "../../hooks/usePortfolio";
 import { useImages, type ImageKey } from "../../hooks/useImages";
 import { clsx } from "../../utils/clsx";
 
@@ -9,9 +10,11 @@ type Chapter = {
   chapter: string;
   title: string;
   copy: string;
-  /** Either a hosted image URL or a key from `useImages`. */
-  image: string;
   caption: string;
+  /** Slug of a collection in portfolio.json — uses that collection's flagged cover. */
+  collection?: string;
+  /** Hosted image URL or a key from `useImages`; used when `collection` is not set. */
+  image?: string;
 };
 
 const CHAPTERS: Chapter[] = homeContent.gallery.chapters;
@@ -36,15 +39,29 @@ function SloganCell({ chapter, title, copy }: SloganCellProps) {
 
 type ChapterRowProps = {
   chapter: Chapter;
-  src: string;
   reverse: boolean;
 };
 
 /** Image + slogan pair; `reverse` puts the slogan first (image on the right). */
-function ChapterRow({ chapter, src, reverse }: ChapterRowProps) {
+function ChapterRow({ chapter, reverse }: ChapterRowProps) {
+  const img = useImages();
+  const { data: cover } = useCollectionCover(chapter.collection);
+
+  const localImage = chapter.image
+    ? isRemoteImage(chapter.image)
+      ? chapter.image
+      : img[chapter.image as ImageKey]
+    : undefined;
+  const src = chapter.collection ? cover : localImage;
+
   const image = (
     <Reveal variant={reverse ? "right" : "left"} delay={reverse ? 1 : 0}>
-      <Frame src={src} ratio="wide" caption={chapter.caption} />
+      {/* Empty frame keeps the layout stable while a collection cover is still loading. */}
+      {src ? (
+        <Frame src={src} ratio="wide" caption={chapter.caption} />
+      ) : (
+        <div className="frame wide" aria-hidden />
+      )}
     </Reveal>
   );
   const slogan = (
@@ -62,18 +79,10 @@ function ChapterRow({ chapter, src, reverse }: ChapterRowProps) {
 }
 
 export function HomeGallery() {
-  const img = useImages();
-  const resolveImage = (image: string) => (isRemoteImage(image) ? image : img[image as ImageKey]);
-
   return (
     <section id="work" className="px-[40px] pt-[140px] pb-[140px] max-md:px-[22px] max-md:py-[100px]">
       {CHAPTERS.map((chapter, idx) => (
-        <ChapterRow
-          key={chapter.chapter}
-          chapter={chapter}
-          src={resolveImage(chapter.image)}
-          reverse={idx % 2 === 1}
-        />
+        <ChapterRow key={chapter.chapter} chapter={chapter} reverse={idx % 2 === 1} />
       ))}
     </section>
   );
