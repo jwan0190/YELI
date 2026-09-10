@@ -5,20 +5,17 @@ export type NavLink = {
   href: string;
 };
 
+const PORTFOLIO_PATH = "/portfolio";
+
 export const ROUTES = {
   home: "/",
-  portfolio: "/portfolio",
+  portfolio: PORTFOLIO_PATH,
   studio: "/studio",
   contact: "/contact",
-  galleries: {
-    weddings: "/portfolio/weddings",
-    events: "/portfolio/events",
-    elopements: "/portfolio/elopements",
-    portraits: "/portfolio/portraits",
-    film: "/portfolio/film",
-    harbour: "/portfolio/harbour",
-    golf: "/portfolio/golf",
-  },
+  film: `${PORTFOLIO_PATH}/film`,
+  /** Route pattern for data-driven collection galleries. */
+  collectionPattern: `${PORTFOLIO_PATH}/:slug`,
+  collection: (slug: string) => `${PORTFOLIO_PATH}/${slug}`,
 } as const;
 
 export const PRIMARY_NAV: NavLink[] = navContent.primary;

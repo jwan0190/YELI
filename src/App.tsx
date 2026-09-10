@@ -7,13 +7,8 @@ const HomePage = lazy(() => import("./pages/HomePage"));
 const PortfolioPage = lazy(() => import("./pages/PortfolioPage"));
 const StudioPage = lazy(() => import("./pages/StudioPage"));
 const ContactPage = lazy(() => import("./pages/ContactPage"));
-const WeddingsGalleryPage = lazy(() => import("./pages/galleries/WeddingsGalleryPage"));
-const EventsGalleryPage = lazy(() => import("./pages/galleries/EventsGalleryPage"));
-const ElopementsGalleryPage = lazy(() => import("./pages/galleries/ElopementsGalleryPage"));
-const PortraitsGalleryPage = lazy(() => import("./pages/galleries/PortraitsGalleryPage"));
 const FilmGalleryPage = lazy(() => import("./pages/galleries/FilmGalleryPage"));
-const HarbourGalleryPage = lazy(() => import("./pages/galleries/HarbourGalleryPage"));
-const GolfGalleryPage = lazy(() => import("./pages/galleries/GolfGalleryPage"));
+const CollectionGalleryPage = lazy(() => import("./pages/galleries/CollectionGalleryPage"));
 
 export default function App() {
   return (
@@ -25,13 +20,8 @@ export default function App() {
             <Route path={ROUTES.portfolio} element={<PortfolioPage />} />
             <Route path={ROUTES.studio} element={<StudioPage />} />
             <Route path={ROUTES.contact} element={<ContactPage />} />
-            <Route path={ROUTES.galleries.weddings} element={<WeddingsGalleryPage />} />
-            <Route path={ROUTES.galleries.events} element={<EventsGalleryPage />} />
-            <Route path={ROUTES.galleries.elopements} element={<ElopementsGalleryPage />} />
-            <Route path={ROUTES.galleries.portraits} element={<PortraitsGalleryPage />} />
-            <Route path={ROUTES.galleries.film} element={<FilmGalleryPage />} />
-            <Route path={ROUTES.galleries.harbour} element={<HarbourGalleryPage />} />
-            <Route path={ROUTES.galleries.golf} element={<GolfGalleryPage />} />
+            <Route path={ROUTES.film} element={<FilmGalleryPage />} />
+            <Route path={ROUTES.collectionPattern} element={<CollectionGalleryPage />} />
             <Route path="*" element={<Navigate to={ROUTES.home} replace />} />
           </Route>
         </Routes>

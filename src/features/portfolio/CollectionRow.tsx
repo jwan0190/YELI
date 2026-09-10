@@ -3,6 +3,7 @@ import { Button } from "../../components/ui/Button";
 import { Reveal } from "../../components/ui/Reveal";
 import { RichText } from "../../components/ui/RichText";
 import { clsx } from "../../utils/clsx";
+import { displayImageUrl } from "../../utils/imageSource";
 
 export type CollectionRowProps = {
   number: string;
@@ -43,8 +44,11 @@ export function CollectionRow({
         aria-label={ctaLabel}
       >
         <img
-          src={cover}
+          src={displayImageUrl(cover)}
           alt={alt}
+          loading="lazy"
+          decoding="async"
+          referrerPolicy="no-referrer"
           className="h-full w-full object-cover transition-[transform,filter] duration-[1600ms] ease-[cubic-bezier(.2,.8,.2,1)] hover:scale-[1.04] hover:brightness-90"
         />
         <span

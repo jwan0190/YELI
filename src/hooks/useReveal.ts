@@ -8,24 +8,41 @@ const OBSERVER_OPTIONS: IntersectionObserverInit = {
 
 /**
  * Observes `.reveal` elements and toggles `.in` when they scroll into view.
- * Pass a `key` (e.g. route pathname) so the observer re-binds whenever
- * the page content changes.
+ * Elements added later (e.g. after data has been fetched) are picked up by a
+ * MutationObserver, so async pages animate the same way as static ones.
+ * Pass a `key` (e.g. route key) so the observers re-bind on navigation.
  */
 export function useReveal(key?: string) {
   useEffect(() => {
-    const elements = document.querySelectorAll<HTMLElement>(SELECTOR);
-    if (!elements.length) return;
-
-    const observer = new IntersectionObserver((entries) => {
+    const intersection = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("in");
-          observer.unobserve(entry.target);
+          intersection.unobserve(entry.target);
         }
       });
     }, OBSERVER_OPTIONS);
 
-    elements.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
+    const observeWithin = (root: ParentNode) => {
+      root.querySelectorAll<HTMLElement>(SELECTOR).forEach((el) => intersection.observe(el));
+    };
+
+    const observeAdded = (node: Node) => {
+      if (!(node instanceof HTMLElement)) return;
+      if (node.matches(SELECTOR)) intersection.observe(node);
+      observeWithin(node);
+    };
+
+    observeWithin(document);
+
+    const mutation = new MutationObserver((records) => {
+      records.forEach((record) => record.addedNodes.forEach(observeAdded));
+    });
+    mutation.observe(document.body, { childList: true, subtree: true });
+
+    return () => {
+      mutation.disconnect();
+      intersection.disconnect();
+    };
   }, [key]);
 }

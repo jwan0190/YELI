@@ -1,12 +1,14 @@
-export type FrameRatio = "tall" | "portrait" | "square" | "wide" | "cinema";
+export const FRAME_RATIOS = ["tall", "portrait", "square", "wide", "cinema"] as const;
+export type FrameRatio = (typeof FRAME_RATIOS)[number];
+
+export const ROW_VARIANTS = ["r-3", "r-2", "r-asym-a", "r-asym-b", "r-1"] as const;
+export type RowVariant = (typeof ROW_VARIANTS)[number];
 
 export type GalleryItem = {
   src: string;
   caption?: string;
   ratio: FrameRatio;
 };
-
-export type RowVariant = "r-3" | "r-2" | "r-asym-a" | "r-1";
 
 export type GalleryRow = {
   variant: RowVariant;
