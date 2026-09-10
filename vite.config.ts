@@ -4,14 +4,16 @@ import react from "@vitejs/plugin-react";
 const SITE_DESCRIPTION =
   "Wedding, event, real estate and portrait photography from Sydney — documented slowly, with film and patience.";
 
-/** Used when VITE_SITE_URL is not set, so previews still show an image. */
+/** Canonical public URL; VITE_SITE_URL overrides it for staging builds. */
+const DEFAULT_SITE_URL = "https://yeli.com.au";
+
+/** Used only when no site URL is available at all, so previews still show an image. */
 const FALLBACK_OG_IMAGE =
   "https://i.pinimg.com/1200x/83/62/4c/83624c741fff1a11be500291854259b6.jpg";
 
 /**
  * Fills the link-preview placeholders in index.html. Social crawlers need an
- * absolute image URL, so set VITE_SITE_URL (e.g. https://yeli.studio) in .env
- * or in the host's build settings to serve /og-image.jpg from this site.
+ * absolute image URL; it is built from the site URL and served from /og-image.jpg.
  */
 function socialMeta(siteUrl: string | undefined): Plugin {
   const base = siteUrl?.replace(/\/+$/, "") ?? "";
@@ -25,17 +27,21 @@ function socialMeta(siteUrl: string | undefined): Plugin {
   return {
     name: "yeli-social-meta",
     transformIndexHtml(html) {
-      return Object.entries(replacements).reduce(
+      const filled = Object.entries(replacements).reduce(
         (out, [token, value]) => out.replaceAll(token, value),
         html,
       );
+      // A relative og:url is invalid, so omit the tag until the site URL is configured.
+      const ogUrlTag = /^[ \t]*<meta property="og:url"[^\n]*\n/m;
+      return base ? filled : filled.replace(ogUrlTag, "");
     },
   };
 }
 
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), "VITE_");
+  // "." resolves against the directory Vite was started from, so no Node types are needed.
+  const env = loadEnv(mode, ".", "VITE_");
   return {
-    plugins: [react(), socialMeta(env.VITE_SITE_URL)],
+    plugins: [react(), socialMeta(env.VITE_SITE_URL || DEFAULT_SITE_URL)],
   };
 });
