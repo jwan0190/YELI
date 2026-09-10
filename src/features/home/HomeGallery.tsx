@@ -2,13 +2,23 @@ import homeContent from "../../assets/strings/home.json";
 import { Frame } from "../../components/ui/Frame";
 import { Reveal } from "../../components/ui/Reveal";
 import { RichText } from "../../components/ui/RichText";
-import { useImages } from "../../hooks/useImages";
+import { useImages, type ImageKey } from "../../hooks/useImages";
+import { clsx } from "../../utils/clsx";
 
-type SloganCellProps = {
+type Chapter = {
   chapter: string;
   title: string;
   copy: string;
+  /** Either a hosted image URL or a key from `useImages`. */
+  image: string;
+  caption: string;
 };
+
+const CHAPTERS: Chapter[] = homeContent.gallery.chapters;
+
+const isRemoteImage = (value: string) => /^https?:\/\//.test(value);
+
+type SloganCellProps = Pick<Chapter, "chapter" | "title" | "copy">;
 
 function SloganCell({ chapter, title, copy }: SloganCellProps) {
   return (
@@ -24,52 +34,47 @@ function SloganCell({ chapter, title, copy }: SloganCellProps) {
   );
 }
 
+type ChapterRowProps = {
+  chapter: Chapter;
+  src: string;
+  reverse: boolean;
+};
+
+/** Image + slogan pair; `reverse` puts the slogan first (image on the right). */
+function ChapterRow({ chapter, src, reverse }: ChapterRowProps) {
+  const image = (
+    <Reveal variant={reverse ? "right" : "left"} delay={reverse ? 1 : 0}>
+      <Frame src={src} ratio="wide" caption={chapter.caption} />
+    </Reveal>
+  );
+  const slogan = (
+    <Reveal variant={reverse ? "left" : "right"} delay={reverse ? 0 : 1}>
+      <SloganCell chapter={chapter.chapter} title={chapter.title} copy={chapter.copy} />
+    </Reveal>
+  );
+
+  return (
+    <div className={clsx("row r-asym-a spread", reverse && "reverse")}>
+      {reverse ? slogan : image}
+      {reverse ? image : slogan}
+    </div>
+  );
+}
+
 export function HomeGallery() {
   const img = useImages();
-  const { gallery } = homeContent;
+  const resolveImage = (image: string) => (isRemoteImage(image) ? image : img[image as ImageKey]);
 
   return (
     <section id="work" className="px-[40px] pt-[140px] pb-[140px] max-md:px-[22px] max-md:py-[100px]">
-      <div className="row r-asym-a spread">
-        <Reveal variant="left">
-          <Frame src={img.hudsonValley} ratio="wide" caption={gallery.chapterOne.caption} />
-        </Reveal>
-        <Reveal variant="right" delay={1}>
-          <SloganCell
-            chapter={gallery.chapterOne.chapter}
-            title={gallery.chapterOne.title}
-            copy={gallery.chapterOne.copy}
-          />
-        </Reveal>
-      </div>
-
-      <div className="row r-asym-a spread reverse">
-        <Reveal variant="left">
-          <SloganCell
-            chapter={gallery.chapterTwo.chapter}
-            title={gallery.chapterTwo.title}
-            copy={gallery.chapterTwo.copy}
-          />
-        </Reveal>
-        <Reveal variant="right" delay={1}>
-          <Frame src={img.petals} ratio="wide" caption={gallery.chapterTwo.caption} />
-        </Reveal>
-      </div>
-
-      <div className="row r-1">
-        <Reveal>
-          <Frame src={img.longTable} ratio="cinema" caption={gallery.longTableCaption} />
-        </Reveal>
-      </div>
-
-      <div className="row r-2">
-        <Reveal variant="left">
-          <Frame src={img.como} ratio="wide" caption={gallery.comoCaption} />
-        </Reveal>
-        <Reveal variant="right" delay={1}>
-          <Frame src={img.dance} ratio="wide" caption={gallery.danceCaption} />
-        </Reveal>
-      </div>
+      {CHAPTERS.map((chapter, idx) => (
+        <ChapterRow
+          key={chapter.chapter}
+          chapter={chapter}
+          src={resolveImage(chapter.image)}
+          reverse={idx % 2 === 1}
+        />
+      ))}
     </section>
   );
 }

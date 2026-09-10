@@ -15,21 +15,43 @@
     ]
   },
   "gallery": {
-    "chapterOne": {
-      "chapter": "Chapter I",
-      "title": "Light, <em>held</em>.",
-      "copy": "The hour before the door opens. The breath that no one else sees. We photograph the quiet, and let the noise pass through.",
-      "caption": "Lawn ceremony — Hudson Valley"
-    },
-    "chapterTwo": {
-      "chapter": "Chapter II",
-      "title": "Two, <em>and a vow</em>.",
-      "copy": "Five weddings a season. We arrive a day early, and we never miss the quiet hours.",
-      "caption": "Petals — Florence"
-    },
-    "longTableCaption": "Long table — Tuscany",
-    "comoCaption": "The Aurelio Wedding — Como",
-    "danceCaption": "The dance — Mallorca"
+    "chapters": [
+      {
+        "chapter": "Chapter I — Events",
+        "title": "Rooms, <em>briefly full</em>.",
+        "copy": "Galas, launches, conferences and private charters. We document the room as it happens — the speeches, the toasts, and the hour after.",
+        "image": "https://i.pinimg.com/originals/83/62/4c/83624c741fff1a11be500291854259b6.jpg",
+        "caption": "Harbour party — Sydney"
+      },
+      {
+        "chapter": "Chapter II — Marketing & Advertising",
+        "title": "Made to <em>be seen</em>.",
+        "copy": "Campaign and brand imagery for sponsors, products and activations — shot on location and delivered ready for print and feed.",
+        "image": "https://i.pinimg.com/originals/77/33/02/7733023a7a3d4e00853b4113b5b3b027.jpg",
+        "caption": "Brand detail — Awards dinner"
+      },
+      {
+        "chapter": "Chapter III — Real Estate",
+        "title": "Light in <em>every room</em>.",
+        "copy": "Architectural and interior photography for listings, developments and hospitality — styled, staged, and shot at the right hour.",
+        "image": "https://i.pinimg.com/originals/94/40/a3/9440a3ab5494f47fbf6753035b61b3fc.jpg",
+        "caption": "Boardroom — Hilton Sydney"
+      },
+      {
+        "chapter": "Chapter IV — Wedding",
+        "title": "Two, <em>and a vow</em>.",
+        "copy": "Five weddings a season. We arrive a day early, and we never miss the quiet hours.",
+        "image": "hudsonValley",
+        "caption": "Lawn ceremony — Hudson Valley"
+      },
+      {
+        "chapter": "Chapter V — Portraits",
+        "title": "Held <em>still</em>.",
+        "copy": "Bridal, family and children's art portraits — in the studio or on location, with available light and patience.",
+        "image": "https://i.pinimg.com/originals/61/13/3b/61133bd7d6b51d137001f739c7a48077.jpg",
+        "caption": "Candid — Sydney Harbour"
+      }
+    ]
   },
   "pullQuote": {
     "quote": "Photographs are how we stay in the rooms we leave.",
