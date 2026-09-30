@@ -7,11 +7,16 @@ import { credentialsFromEnv, fetchBoard } from "../../server/pinterestBoard";
  * are set in Netlify's environment variables; otherwise the public endpoints.
  * The X-Pinterest-Source response header says which one answered.
  *
- * Netlify's CDN caches the response for a few minutes so Pinterest isn't hit on
- * every page view; after that the next visitor gets the cached copy instantly
+ * Netlify's CDN caches the response so Pinterest isn't hit on every page view;
+ * once it goes stale the next visitor still gets the cached copy instantly
  * while a fresh one is fetched in the background.
+ *
+ * Budget: Pinterest Trial apps get 1,000 API calls a day, and one refresh costs
+ * about 1 + (number of sections) calls. Refreshing at most every 30 minutes
+ * means ≤ 48 refreshes a day (~400 calls with 7 sections). "durable" makes all
+ * Netlify edge locations share one cached copy instead of each fetching its own.
  */
-const CDN_FRESH_SECONDS = 300;
+const CDN_FRESH_SECONDS = 1800;
 const CDN_STALE_SECONDS = 86_400;
 
 export default async function handler(): Promise<Response> {
@@ -21,7 +26,7 @@ export default async function handler(): Promise<Response> {
       headers: {
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "public, max-age=0, must-revalidate",
-        "Netlify-CDN-Cache-Control": `public, max-age=${CDN_FRESH_SECONDS}, stale-while-revalidate=${CDN_STALE_SECONDS}`,
+        "Netlify-CDN-Cache-Control": `public, durable, max-age=${CDN_FRESH_SECONDS}, stale-while-revalidate=${CDN_STALE_SECONDS}`,
         "X-Pinterest-Source": source,
       },
     });

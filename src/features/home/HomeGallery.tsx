@@ -23,10 +23,11 @@ const isRemoteImage = (value: string) => /^https?:\/\//.test(value);
 
 type SloganCellProps = Pick<Chapter, "chapter" | "title" | "copy">;
 
-function SloganCell({ chapter, title, copy }: SloganCellProps) {
+// Chapter eyebrow hidden for now; restore `chapter` here and the <span> below to bring it back.
+function SloganCell({ title, copy }: SloganCellProps) {
   return (
     <div className="px-[20px] max-md:px-0">
-      <span className="eyebrow mb-[28px]">{chapter}</span>
+      {/* <span className="eyebrow mb-[28px]">{chapter}</span> */}
       <h3 className="slogan mt-[28px] mb-[28px]">
         <RichText text={title} />
       </h3>

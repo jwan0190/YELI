@@ -11,10 +11,11 @@ export function ManifestoSection() {
       className="grid grid-cols-2 items-end gap-[80px] px-[40px] pb-[140px] pt-[180px] max-md:grid-cols-1 max-md:gap-[40px] max-md:px-[22px] max-md:pt-[140px]"
     >
       <div>
-        <Reveal>
+        {/* <Reveal>
           <span className="eyebrow mb-[32px]">{manifesto.eyebrow}</span>
-        </Reveal>
-        <Reveal as="h2" delay={1} className="display mt-[32px]">
+        </Reveal> */}
+        <Reveal as="h2" delay={1} className="display mt-[32px] w-fit [&_em+br]:hidden [&_em]:block [&_em]:text-center"
+        >
           <RichText text={manifesto.title} />
         </Reveal>
       </div>
