@@ -10,19 +10,20 @@ type FooterColumn = {
 };
 
 const COLUMNS: FooterColumn[] = [
-  {
-    heading: FOOTER.studio.heading,
-    body: (
-      <p>
-        {FOOTER.studio.lines.map((line, i) => (
-          <span key={line}>
-            {line}
-            {i < FOOTER.studio.lines.length - 1 && <br />}
-          </span>
-        ))}
-      </p>
-    ),
-  },
+  // Studio address hidden for now; restore this column (and grid-cols-4 below) to show it again.
+  // {
+  //   heading: FOOTER.studio.heading,
+  //   body: (
+  //     <p>
+  //       {FOOTER.studio.lines.map((line, i) => (
+  //         <span key={line}>
+  //           {line}
+  //           {i < FOOTER.studio.lines.length - 1 && <br />}
+  //         </span>
+  //       ))}
+  //     </p>
+  //   ),
+  // },
   {
     heading: FOOTER.inquiries.heading,
     body: <a href={`mailto:${FOOTER.inquiries.email}`}>{FOOTER.inquiries.email}</a>,
@@ -61,7 +62,7 @@ export function SiteFooter() {
         {BRAND_NAME}
       </Link>
 
-      <div className="grid grid-cols-4 gap-[40px] border-t border-white/[0.18] pt-[40px] max-md:grid-cols-2">
+      <div className="grid grid-cols-3 gap-[40px] border-t border-white/[0.18] pt-[40px] max-md:grid-cols-2">
         {COLUMNS.map((col) => (
           <div key={col.heading}>
             <h5 className="mb-[18px] font-sans text-[11px] font-normal uppercase tracking-meta opacity-55">
