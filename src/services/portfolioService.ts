@@ -86,6 +86,7 @@ function describeNewSections(raw: RawPortfolio, library: ImageLibrary): RawColle
 }
 
 function buildCollection(raw: RawCollection, library: ImageLibrary, position: number): Collection | null {
+  if (raw.hidden) return null;
   const group = resolveGroup(library, raw.images);
   const cover = raw.cover ?? group.cover ?? group.frames[0]?.src;
   const hasGallery = raw.href === undefined;

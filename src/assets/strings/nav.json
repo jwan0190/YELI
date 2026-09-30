@@ -2,12 +2,12 @@
   "brand": "YELI",
   "primary": [
     {
-      "label": "Portfolio",
+      "label": "Photography",
       "href": "/portfolio"
     },
     {
-      "label": "Studio",
-      "href": "/studio"
+      "label": "Videography",
+      "href": "/videography"
     },
     {
       "label": "Contact",
@@ -29,7 +29,7 @@
     },
     "inquiries": {
       "heading": "Inquiries",
-      "email": "hello@yeli.studio"
+      "email": "info@yelistudio.com"
     },
     "pages": {
       "heading": "Pages"

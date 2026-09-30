@@ -49,6 +49,8 @@ export const rawCollectionSchema = z.object({
   ctaLabel: z.string(),
   /** Override the link target; defaults to `/portfolio/{slug}`. */
   href: z.string().optional(),
+  /** Keeps the entry (so its images group is not re-added as a new section) but leaves it off the site. */
+  hidden: z.boolean().optional(),
   gallery: galleryTextSchema.optional(),
 });
 

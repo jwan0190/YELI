@@ -11,7 +11,12 @@ type StudioBlock = {
   big?: boolean;
 };
 
-const STUDIO_INFO = contactContent.studioInfo as StudioBlock[];
+// Address and phone are hidden for now; remove this filter to show them again.
+const HIDDEN_TYPES: StudioBlock["type"][] = ["address", "appointment"];
+
+const STUDIO_INFO = (contactContent.studioInfo as StudioBlock[]).filter(
+  (block) => !HIDDEN_TYPES.includes(block.type),
+);
 
 function renderBlockBody(block: StudioBlock) {
   const big = block.big ? "big" : undefined;

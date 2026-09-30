@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 
 import filmContent from "../../assets/strings/film.json";
 import { PageBanner } from "../../components/shared/PageBanner";
-import { BackLink } from "../../components/ui/BackLink";
 import { Reveal } from "../../components/ui/Reveal";
 import { RichText } from "../../components/ui/RichText";
-import { ROUTES } from "../../constants/navigation";
 import { FilmReel } from "../../features/galleries/FilmReel";
 import { useFilmReels } from "../../hooks/useFilmReels";
 
@@ -20,9 +18,6 @@ export default function FilmGalleryPage() {
   return (
     <>
       <PageBanner
-        beforeContent={
-          <BackLink to={ROUTES.portfolio}>{filmContent.banner.backLabel}</BackLink>
-        }
         eyebrow={filmContent.banner.eyebrow}
         title={filmContent.banner.title}
         lede={filmContent.banner.lede}

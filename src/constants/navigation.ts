@@ -10,10 +10,9 @@ const PORTFOLIO_PATH = "/portfolio";
 export const ROUTES = {
   home: "/",
   portfolio: PORTFOLIO_PATH,
-  studio: "/studio",
+  videography: "/videography",
   contact: "/contact",
   privacy: "/privacy",
-  film: `${PORTFOLIO_PATH}/film`,
   /** Route pattern for data-driven collection galleries. */
   collectionPattern: `${PORTFOLIO_PATH}/:slug`,
   collection: (slug: string) => `${PORTFOLIO_PATH}/${slug}`,

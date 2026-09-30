@@ -3,7 +3,7 @@
   "banner": {
     "eyebrow": "Section 05 — Contact",
     "title": "Tell us<br/>about the <em>day</em>.",
-    "lede": "We respond to every inquiry within two days. We book five weddings per season."
+    "lede": "We respond to every inquiry within two days."
   },
   "studioInfo": [
     {
@@ -15,7 +15,7 @@
     {
       "heading": "Email",
       "type": "email",
-      "email": "hello@yeli.studio",
+      "email": "info@yelistudio.com",
       "big": true
     },
     {
@@ -27,9 +27,8 @@
       "heading": "Follow",
       "type": "social",
       "links": [
-        { "label": "Instagram", "href": "https://instagram.com/yeli.studio" },
-        { "label": "Pinterest", "href": "https://pinterest.com" },
-        { "label": "Vimeo", "href": "https://vimeo.com" }
+        { "label": "Instagram", "href": "https://www.instagram.com/yeli_image" },
+        { "label": "Pinterest", "href": "https://pin.it/14LN9X2lP" }
       ]
     }
   ],
@@ -51,7 +50,7 @@
       "yourNameRequired": "Please share your name.",
       "emailInvalid": "Please enter a valid email.",
       "notConfigured": "Email service is not configured. Please try again later.",
-      "fallback": "We couldn't send your message. Please try again or email hello@yeli.studio.",
+      "fallback": "We couldn't send your message. Please try again or email info@yelistudio.com.",
       "prefix": "We couldn't send your message:"
     },
     "subjectTemplate": "New {type} inquiry from {name}"

@@ -1,7 +1,6 @@
 {
-  "pageTitle": "Film & Cinema — YELI",
+  "pageTitle": "Videography — YELI",
   "banner": {
-    "backLabel": "← Back to portfolio",
     "eyebrow": "Film & cinema · Six reels",
     "title": "Film <em>& cinema</em>",
     "lede": "Super-8 and 16mm transfers. Six-minute story films, scored, hand-edited from a season's footage."
@@ -30,8 +29,8 @@
     }
   ],
   "back": {
-    "eyebrow": "Back to start",
-    "title": "View all <em>collections</em> →",
+    "eyebrow": "Also see",
+    "title": "View the <em>photography</em> →",
     "href": "/portfolio"
   },
   "playLabel": "Play"

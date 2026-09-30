@@ -74,6 +74,7 @@
     },
     {
       "slug": "film",
+      "hidden": true,
       "images": "videos",
       "cover": "https://i.pinimg.com/originals/16/35/cb/1635cb28253982cd60163ec9704d856c.jpg",
       "href": "/portfolio/film",
