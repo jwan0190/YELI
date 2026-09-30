@@ -1,5 +1,6 @@
-import { defineConfig, loadEnv, type Plugin } from "vite";
+import { defineConfig, loadEnv, type Connect, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
+import { credentialsFromEnv, fetchBoard, type PinterestCredentials } from "./server/pinterestBoard";
 
 const SITE_DESCRIPTION =
   "Wedding, event, real estate and portrait photography from Sydney — documented slowly, with film and patience.";
@@ -10,6 +11,9 @@ const DEFAULT_SITE_URL = "https://yeli.com.au";
 /** Used only when no site URL is available at all, so previews still show an image. */
 const FALLBACK_OG_IMAGE =
   "https://i.pinimg.com/1200x/83/62/4c/83624c741fff1a11be500291854259b6.jpg";
+
+/** Same path the Netlify Function is served on in production (see public/_redirects). */
+const PINTEREST_API_PATH = "/api/pinterest";
 
 /**
  * Fills the link-preview placeholders in index.html. Social crawlers need an
@@ -38,10 +42,44 @@ function socialMeta(siteUrl: string | undefined): Plugin {
   };
 }
 
-export default defineConfig(({ mode }) => {
-  // "." resolves against the directory Vite was started from, so no Node types are needed.
-  const env = loadEnv(mode, ".", "VITE_");
+/** Serves /api/pinterest from the dev and preview servers, mirroring the Netlify Function. */
+function pinterestApi(credentials: PinterestCredentials): Plugin {
+  const middleware: Connect.NextHandleFunction = (req, res, next) => {
+    if (req.url?.split("?")[0] !== PINTEREST_API_PATH) return next();
+    fetchBoard(credentials)
+      .then(({ library, source }) => {
+        res.statusCode = 200;
+        res.setHeader("Content-Type", "application/json; charset=utf-8");
+        res.setHeader("X-Pinterest-Source", source);
+        res.end(JSON.stringify(library));
+      })
+      .catch((error: unknown) => {
+        res.statusCode = 502;
+        res.setHeader("Content-Type", "application/json; charset=utf-8");
+        res.end(JSON.stringify({ error: error instanceof Error ? error.message : "Unknown error" }));
+      });
+  };
+
   return {
-    plugins: [react(), socialMeta(env.VITE_SITE_URL || DEFAULT_SITE_URL)],
+    name: "yeli-pinterest-api",
+    configureServer(server) {
+      server.middlewares.use(middleware);
+    },
+    configurePreviewServer(server) {
+      server.middlewares.use(middleware);
+    },
+  };
+}
+
+export default defineConfig(({ mode }) => {
+  // The "" prefix loads every variable, including the server-only PINTEREST_* ones.
+  // They are used here in Node only and never reach the browser bundle.
+  const env = loadEnv(mode, ".", "");
+  return {
+    plugins: [
+      react(),
+      socialMeta(env.VITE_SITE_URL || DEFAULT_SITE_URL),
+      pinterestApi(credentialsFromEnv(env)),
+    ],
   };
 });

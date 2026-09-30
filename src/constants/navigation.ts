@@ -12,6 +12,7 @@ export const ROUTES = {
   portfolio: PORTFOLIO_PATH,
   studio: "/studio",
   contact: "/contact",
+  privacy: "/privacy",
   film: `${PORTFOLIO_PATH}/film`,
   /** Route pattern for data-driven collection galleries. */
   collectionPattern: `${PORTFOLIO_PATH}/:slug`,

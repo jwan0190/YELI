@@ -3,22 +3,30 @@
     {
       "slug": "boat-party",
       "images": "boat-party",
-      "number": "№ 01",
-      "eyebrow": "Collection 01",
       "title": "Harbour <em>party</em>",
       "description": "A private charter aboard Maddison on Sydney Harbour — canapés on deck, a swim off the stern, and a long afternoon under the bridge.",
       "ctaLabel": "View harbour party",
       "alt": "Friends toasting on the bow of a yacht with the Sydney skyline behind them",
       "gallery": {
         "pageTitle": "Harbour Party — YELI",
-        "lede": "A private charter out of Sydney Harbour. The city on one side, open water on the other, and thirteen friends in between."
+        "lede": "A private charter out of Sydney Harbour. The city on one side, open water on the other, and a long afternoon in between."
+      }
+    },
+    {
+      "slug": "editorial-portrait",
+      "images": "editorial-portrait",
+      "title": "Editorial <em>bridal</em>",
+      "description": "A bridal editorial on the harbour's edge — a colonial veranda, the lawn under the fig trees, and the last light on the sand.",
+      "ctaLabel": "View editorial",
+      "alt": "A bride in a strapless gown on a sunlit lawn",
+      "gallery": {
+        "pageTitle": "Editorial Portrait — YELI",
+        "lede": "Pre-wedding portraits in natural light. Tailored jacket, veil and gown — from the garden to the water."
       }
     },
     {
       "slug": "golf",
       "images": "golf",
-      "number": "№ 02",
-      "eyebrow": "Collection 02",
       "title": "Golf <em>& greens</em>",
       "description": "The 2026 Global Chinese Elite Golf Challenge, Australia National Final — tournament coverage from the first tee to the last putt of the day.",
       "ctaLabel": "View golf",
@@ -30,9 +38,7 @@
     },
     {
       "slug": "awards-dinner",
-      "images": "ball",
-      "number": "№ 03",
-      "eyebrow": "Collection 03",
+      "images": "颁奖晚宴",
       "title": "Awards <em>dinner</em>",
       "description": "The evening after the final — a ballroom, a trophy, and the prize draw. Toasts, certificates, and the quiet hour after the speeches.",
       "ctaLabel": "View awards dinner",
@@ -45,8 +51,6 @@
     {
       "slug": "shenzhen-competition",
       "images": "shenzhen",
-      "number": "№ 04",
-      "eyebrow": "Collection 04",
       "title": "Innovation <em>competition</em>",
       "description": "The 9th China (Shenzhen) Innovation & Entrepreneurship International Competition, Sydney Division — keynotes, signings, and the room in between.",
       "ctaLabel": "View competition",
@@ -59,8 +63,6 @@
     {
       "slug": "real-estate",
       "images": "real-estate",
-      "number": "№ 05",
-      "eyebrow": "Collection 05",
       "title": "Light in <em>every room</em>",
       "description": "Architectural and interior photography for listings, developments and hospitality — styled, staged, and shot at the right hour.",
       "ctaLabel": "View real estate",
@@ -72,15 +74,14 @@
     },
     {
       "slug": "film",
-      "images": "film",
+      "images": "videos",
+      "cover": "https://i.pinimg.com/originals/16/35/cb/1635cb28253982cd60163ec9704d856c.jpg",
       "href": "/portfolio/film",
-      "number": "№ 06",
       "frameCount": "Films",
-      "eyebrow": "Collection 06",
       "title": "Film <em>& cinema</em>",
       "description": "Short story films cut from a season's footage — scored, hand-edited, and delivered alongside the stills.",
       "ctaLabel": "View films",
-      "alt": "Film & Cinema"
+      "alt": "A yacht on Sydney Harbour seen from above"
     }
   ]
 }

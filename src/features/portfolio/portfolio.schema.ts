@@ -38,10 +38,12 @@ export const rawCollectionSchema = z.object({
   images: z.string().optional(),
   /** Explicit cover URL; overrides the flagged image. */
   cover: imageUrl.optional(),
-  number: z.string(),
+  /** Defaults to "№ 01", "№ 02"… by position. */
+  number: z.string().optional(),
   frameCount: z.string().optional(),
   alt: z.string(),
-  eyebrow: z.string(),
+  /** Defaults to "Collection 01", "Collection 02"… by position. */
+  eyebrow: z.string().optional(),
   title: z.string(),
   description: z.string(),
   ctaLabel: z.string(),

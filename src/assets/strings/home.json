@@ -2,16 +2,17 @@
   "pageTitle": "YELI — Wedding & Event Photography",
   "hero": {
     "tagline": "Event Photography",
-    "headline": "Light, held<br/><em>still.</em>",
-    "meta": "EST. 2014 — NEW YORK · PARIS · KYOTO",
+    "headline": "Light, People<br/><em>Stories.</em>",
+    "meta": "SYDNEY",
     "scroll": "SCROLL"
   },
   "manifesto": {
     "eyebrow": "001 — The Studio",
-    "title": "We photograph<br/>the <em>quiet hours</em><br/>between the vows.",
+    "title": "Made to be <br/><em>seen</em><br/>Made to last.",
     "paragraphs": [
-      "YELI is a small studio of four photographers documenting weddings, private celebrations, and editorial events across three continents.",
-      "Our work is unhurried — closer to a film still than a snapshot. We arrive early, stay late, and trust the day to give us its best moments."
+      "Photography with purpose",
+      "We create images that feel natural, considered and true to the people, brands and spaces behind them.",
+      "From commercial campaigns to events portraits, we focus on strong light, honest moments and images that stand the test of time."
     ]
   },
   "gallery": {
@@ -41,14 +42,14 @@
         "chapter": "Chapter IV — Wedding",
         "title": "Two, <em>and a vow</em>.",
         "copy": "Five weddings a season. We arrive a day early, and we never miss the quiet hours.",
-        "image": "hudsonValley",
-        "caption": "Lawn ceremony — Hudson Valley"
+        "caption": "Editorial bridal — Sydney",
+        "collection": "editorial-portrait"
       },
       {
         "chapter": "Chapter V — Portraits",
         "title": "Held <em>still</em>.",
         "copy": "Bridal, family and children's art portraits — in the studio or on location, with available light and patience.",
-        "image": "https://i.pinimg.com/originals/61/13/3b/61133bd7d6b51d137001f739c7a48077.jpg",
+        "image": "https://i.pinimg.com/originals/d2/93/88/d29388917a9949d707b233d6193cd905.jpg",
         "caption": "Candid — Sydney Harbour"
       }
     ]

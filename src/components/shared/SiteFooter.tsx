@@ -75,7 +75,12 @@ export function SiteFooter() {
       </div>
 
       <div className="mt-[80px] flex justify-between border-t border-white/[0.18] pt-[24px] font-sans text-[10px] uppercase tracking-meta opacity-60">
-        <span>{FOOTER.copy}</span>
+        <span className="flex items-center gap-[18px]">
+          <span>{FOOTER.copy}</span>
+          <Link to={ROUTES.privacy} className="transition-opacity hover:opacity-70">
+            {FOOTER.privacyLabel}
+          </Link>
+        </span>
         <span>{FOOTER.credit}</span>
       </div>
     </footer>
