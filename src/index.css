@@ -100,7 +100,7 @@
     transform: scale(1.04);
   }
   .frame.tall {
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 2 / 3;
   }
   .frame.portrait {
     aspect-ratio: 4 / 5;

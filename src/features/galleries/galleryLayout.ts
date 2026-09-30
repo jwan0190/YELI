@@ -65,15 +65,12 @@ function layoutPortraits(items: GalleryItem[]): GalleryRow[] {
   return rows;
 }
 
-const withRatio = (item: GalleryItem, ratio: FrameRatio): GalleryItem =>
-  item.ratio === ratio ? item : { ...item, ratio };
-
-/** Landscapes: an odd run opens full-width, then pairs alternate even and asymmetric. */
+/** Landscapes: an odd run opens full-width (still 3:2), then pairs alternate even and asymmetric. */
 function layoutLandscapes(items: GalleryItem[]): GalleryRow[] {
   const rows: GalleryRow[] = [];
   let rest = items;
   if (rest.length % 2 === 1) {
-    rows.push({ variant: "r-1", items: [withRatio(rest[0], "cinema")] });
+    rows.push({ variant: "r-1", items: [rest[0]] });
     rest = rest.slice(1);
   }
   rest.forEach((item, idx) => {
